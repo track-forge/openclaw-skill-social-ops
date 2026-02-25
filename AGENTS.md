@@ -120,7 +120,29 @@ This is a reputation system, not a growth-hack toolkit.
 
 ---
 
-## 8. Documentation First
+## 8. Secret Scanning
+
+This repo uses [TruffleHog](https://github.com/trufflesecurity/trufflehog) for secret scanning at two layers:
+
+- **CI:** A GitHub Action (`.github/workflows/secret-scan.yml`) runs TruffleHog on every PR and push to `main`.
+- **Local:** A pre-commit hook (`.pre-commit-config.yaml`) catches secrets before they're committed.
+
+### Setting Up the Pre-commit Hook
+
+```bash
+pip install pre-commit
+pre-commit install
+```
+
+This runs TruffleHog automatically on every `git commit`. To scan manually:
+
+```bash
+pre-commit run trufflehog --all-files
+```
+
+---
+
+## 9. Documentation First
 
 If adding new capability:
 
@@ -132,7 +154,7 @@ Clarity compounds.
 
 ---
 
-## 9. When in Doubt
+## 10. When in Doubt
 
 Open a draft PR.
 Explain the uncertainty.
