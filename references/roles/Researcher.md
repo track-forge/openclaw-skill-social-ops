@@ -17,7 +17,7 @@ What repeatable patterns can GladeRunner adopt or adapt?
 
 This role produces strategic guidance — not content.
 
-In our obsidian notebook @ `obsidian-agent-tasks/`:
+In the social workspace:
 
 Primary output:
 `Social/Guidance/README.md`
@@ -186,7 +186,7 @@ Each run appends to:
 
 Full path:
 
-`obsidian-agent-tasks/Social/Content/Logs/Research-YYYY-MM-DD.md`
+`Social/Content/Logs/Research-YYYY-MM-DD.md`
 
 Log format:
 

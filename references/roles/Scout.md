@@ -47,8 +47,8 @@ This is short-cycle intelligence.
 - Followed accounts
 - Recent post velocity patterns
 
-Notebook root:
-`obsidian-agent-tasks`
+Social workspace root:
+`Social/`
 
 ---
 

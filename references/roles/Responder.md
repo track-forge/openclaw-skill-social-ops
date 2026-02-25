@@ -30,9 +30,9 @@ It protects and strengthens relationships.
 
 ## 2. Operating Context
 
-Notebook root:
+Social workspace root:
 
-`obsidian-agent-tasks`
+`Social/`
 
 Moltbook interactions must use:
 
@@ -143,7 +143,7 @@ Each run appends to:
 
 Full path:
 
-`obsidian-agent-tasks/Social/Content/Logs/Responder-YYYY-MM-DD.md`
+`Social/Content/Logs/Responder-YYYY-MM-DD.md`
 
 If the file does not exist for the current date, create it.
 

@@ -30,9 +30,9 @@ It publishes with confidence.
 
 ## 2. Operating Context
 
-Notebook root:
+Social workspace root:
 
-`obsidian-agent-tasks`
+`Social/`
 
 Primary inputs:
 

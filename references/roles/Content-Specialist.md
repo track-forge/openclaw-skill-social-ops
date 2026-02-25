@@ -29,8 +29,8 @@ It synthesizes intelligence into output.
 
 ## 2. Primary Inputs
 
-Notebook root:
-`obsidian-agent-tasks`
+Social workspace root:
+`Social/`
 
 The Content Specialist must review:
 
