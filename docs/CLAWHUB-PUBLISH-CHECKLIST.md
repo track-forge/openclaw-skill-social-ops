@@ -84,19 +84,100 @@ clawhub publish ./path-to-skill \
 - Metrics collection tooling
 - Multi-agent dispatch orchestration
 
+## Repo ↔ Skill Association
+
+ClawHub identifies skills by the `--slug` (or `name` in SKILL.md frontmatter). The slug becomes the install handle: `clawhub install social-ops`.
+
+To link back to the repo, add a `repository` field to the skill description or README. ClawHub doesn't auto-discover GitHub repos — the connection is documentation-level.
+
+## Ignore File (`.clawignore`)
+
+ClawHub publishes **all files** in the folder. To keep the published package lean, we should strip out dev-only files before publish. Two approaches:
+
+### Option A: `.clawignore` (if supported)
+ClawHub may support an ignore file — needs testing. If not:
+
+### Option B: Build step before publish
+Create a `scripts/build-publish.sh` that copies the skill to a clean temp dir, excluding:
+
+```
+AGENTS.md              # Internal contributor guide
+.github/               # CI config
+.pre-commit-config.yaml # Dev tooling
+docs/                  # Spike docs (this file)
+scripts/               # Build scripts themselves
+references/tasks/QUEUE.md  # WIP task state
+```
+
+The GH Action (see below) can run this build step before `clawhub publish`.
+
+## GitHub Actions Publish (Issue #17)
+
+ClawHub supports token-based auth for CI:
+
+```bash
+clawhub login --token <CLAWHUB_TOKEN> --no-browser
+```
+
+### Workflow: `.github/workflows/clawhub-publish.yml`
+
+```yaml
+name: Publish to ClawHub
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm i -g clawhub
+
+      - run: clawhub login --token ${{ secrets.CLAWHUB_TOKEN }} --no-browser
+
+      - name: Build clean package
+        run: |
+          mkdir -p /tmp/publish
+          rsync -a --exclude='.github' --exclude='AGENTS.md' \
+            --exclude='.pre-commit-config.yaml' --exclude='docs/' \
+            --exclude='scripts/' --exclude='references/tasks/QUEUE.md' \
+            . /tmp/publish/
+
+      - name: Publish
+        run: |
+          clawhub publish /tmp/publish \
+            --slug social-ops \
+            --name "Social Ops" \
+            --version ${{ github.event.release.tag_name }} \
+            --changelog "${{ github.event.release.body }}"
+```
+
+### Setup required:
+1. Someone runs `clawhub login` locally to create an account
+2. Generate an API token on clawhub.com
+3. Add `CLAWHUB_TOKEN` as a GitHub repo secret
+4. Tag a release (e.g. `v0.1.0`) → auto-publishes
+
 ## Unknowns & Risks
 
 | # | Unknown | Impact | Mitigation |
 |---|---------|--------|------------|
 | 1 | **Org publishing** — ClawHub may be user-scoped only. No "track-forge" org concept. | Skill owned by one person's account | Publish under shared account, or accept single-owner for now |
-| 2 | **Dotfile filtering** — Unclear if `.github/`, `.pre-commit-config.yaml` are auto-excluded | CI config leaked into published skill | Test with `--dry-run` if available, or inspect after publish |
-| 3 | **File size limits** — Unknown max per file or total | Could block publish if strategy doc is large | Our files are small (<15KB each), likely fine |
-| 4 | **Auth account** — Nobody has run `clawhub login` yet | Can't publish without auth | Need dk or dougbtv to auth before publish |
-| 5 | **GladeRunner-specific content** — Strategy doc references GladeRunner persona | Limits reusability for other users | Document as "example persona" or parameterize |
+| 2 | **Dotfile filtering** — `.github/`, `.pre-commit-config.yaml` may or may not be auto-excluded | CI config leaked into published skill | Use build step to strip explicitly (see above) |
+| 3 | **Auth account** — Nobody has run `clawhub login` yet | Can't publish without auth | Need dk or dougbtv to auth before publish |
+| 4 | **GladeRunner-specific content** — Strategy doc references GladeRunner persona | Limits reusability for other users | Document as "example persona" or parameterize (issue #16) |
+| 5 | **ClawHub API token flow** — Need to verify token generation on clawhub.com | Blocks GH Action publish | Test during first manual publish |
 
-## Follow-Up Issues (to create after spike)
+## Follow-Up Issues (to create after merge)
 
 1. **Clean repo for publish** — Remove/template WIP state in QUEUE.md, review AGENTS.md, ensure no persona-specific hardcoding blocks reuse
 2. **Add install instructions to README** — `clawhub install social-ops`, quick-start guide for new users
 3. **Auth + first publish** — Run `clawhub login`, execute publish command, verify listing on clawhub.com
-4. **Post-publish: platform adapters** — Issue for adding Moltbook/Twitter/Discord adapter scripts (v0.2.0)
+4. **Implement GH Actions publish workflow** — Issue #17, depends on auth + first successful manual publish
