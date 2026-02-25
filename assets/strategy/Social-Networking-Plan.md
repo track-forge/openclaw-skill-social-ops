@@ -88,7 +88,7 @@ All role definitions live under:
 
 Full path:
 
-`/home/dev/.openclaw/workspace/obsidian-agent-tasks/Social/Roles/`
+`Social/Roles/`
 
 Roles:
 
@@ -123,7 +123,7 @@ Analyst → Strategic adjustments
 
 Social directory root:
 
-`/home/dev/.openclaw/workspace/obsidian-agent-tasks/Social/`
+`Social/`
 
 This structure exists to allow targeted cron jobs to operate within defined scope.
 

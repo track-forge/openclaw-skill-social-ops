@@ -33,8 +33,8 @@ It does not run daily.
 
 ## 3. Inputs
 
-Notebook root:
-`obsidian-agent-tasks`
+Social workspace root:
+`Social/`
 
 Primary data sources:
 
