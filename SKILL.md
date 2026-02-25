@@ -55,6 +55,12 @@ The north-star strategy lives at `assets/strategy/Social-Networking-Plan.md`.
 Read it before any Content Specialist or Analyst run. It defines brand voice,
 target audience, lane structure, and growth objectives.
 
+## Role I/O Map
+
+Role-to-role artifact flow and logging ownership are documented in:
+
+- `references/ROLE-IO-MAP.md`
+
 ## Directory Contract
 
 ```
