@@ -55,6 +55,13 @@ The north-star strategy lives at `assets/strategy/Social-Networking-Plan.md`.
 Read it before any Content Specialist or Analyst run. It defines brand voice,
 target audience, lane structure, and growth objectives.
 
+## Cron Pickup Queue
+
+For deterministic builder passes, use:
+
+- `references/tasks/QUEUE.md` (queue spec, statuses, selection + handoff rules)
+- `references/tasks/TEMPLATE.md` (new task entry template)
+
 ## Directory Contract
 
 ```
