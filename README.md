@@ -75,6 +75,9 @@ Each role:
 - Operates independently
 - Feeds into the broader feedback loop
 
+Role handoffs and artifact ownership are documented in:
+- `references/ROLE-IO-MAP.md`
+
 ---
 
 ## Feedback Loop
