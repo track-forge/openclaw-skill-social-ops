@@ -194,3 +194,9 @@ Apache 2.0
 
 Track Forge  
 Built for OpenClaw agents.
+
+## Cron Task Queue
+
+For deterministic implementation passes, use `references/tasks/QUEUE.md`
+with the task format in `references/tasks/TEMPLATE.md`.
+
