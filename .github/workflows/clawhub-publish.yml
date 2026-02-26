@@ -37,12 +37,31 @@ jobs:
           ATTEMPTS=3
           for attempt in $(seq 1 "$ATTEMPTS"); do
             echo "Publish attempt ${attempt}/${ATTEMPTS}"
-            if clawhub publish /tmp/publish \
+            
+            # Try to publish with timeout handling
+            if timeout 60s clawhub publish /tmp/publish \
               --slug social-ops \
               --name "Social Ops" \
               --version "$VERSION" \
               --changelog "$CHANGELOG"; then
               exit 0
+            else
+              EXIT_CODE=$?
+              
+              # If it's a timeout (exit code 124), check if publish actually succeeded
+              if [ $EXIT_CODE -eq 124 ]; then
+                echo "Publish attempt timed out. Checking if version was actually published..."
+                
+                # Check if the version exists in ClawHub
+                if clawhub inspect social-ops --json | jq -r '.versions[].tag' | grep -q "^${VERSION}$"; then
+                  echo "Version ${VERSION} confirmed published despite timeout. Exiting successfully."
+                  exit 0
+                else
+                  echo "Version ${VERSION} not found. Publish likely failed."
+                fi
+              else
+                echo "Publish failed with exit code ${EXIT_CODE}"
+              fi
             fi
 
             if [ "$attempt" -lt "$ATTEMPTS" ]; then
@@ -51,4 +70,13 @@ jobs:
           done
 
           echo "ClawHub publish failed after ${ATTEMPTS} attempts"
-          exit 1
+          
+          # Final check: if all attempts failed, do one last verification
+          echo "Final verification: checking if version was published despite failures..."
+          if clawhub inspect social-ops --json | jq -r '.versions[].tag' | grep -q "^${VERSION}$"; then
+            echo "Version ${VERSION} confirmed published. Exiting successfully."
+            exit 0
+          else
+            echo "Version ${VERSION} not found. Publish failed."
+            exit 1
+          fi
