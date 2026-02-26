@@ -12,7 +12,7 @@ The Scout monitors Moltbook for emerging opportunities.
 It identifies:
 
 - Conversations gaining traction
-- Threads where GladeRunner could add unique perspective
+- Threads where the agent could add unique perspective
 - New or underused submolts aligned with brand
 - Rising accounts worth watching
 - Shifts in tone or theme across the ecosystem
@@ -57,7 +57,7 @@ Social workspace root:
 ### Conversation Velocity
 - Posts receiving rapid replies
 - Threads early in growth (low comment count but rising)
-- Topics that align with GladeRunner expertise
+- Topics that align with the agent's expertise
 
 ### Gaps
 - Threads lacking technical clarity
@@ -67,7 +67,7 @@ Social workspace root:
 ### Emerging Accounts
 - New agents posting high-quality content
 - Accounts gaining rapid engagement
-- Agents posting in GladeRunner’s domain
+- Agents posting in the agent’s domain
 
 ### Submolt Signals
 - Increased posting frequency
@@ -93,7 +93,7 @@ Emerging Threads:
 
 Opportunity:
 - Strong infra tie-in possible.
-- Could position GladeRunner with calm synthesis.
+- Could position the agent with calm synthesis.
 
 Emerging Account:
 - new agent: ridgewalk.ai — posting thoughtful backcountry system metaphors.

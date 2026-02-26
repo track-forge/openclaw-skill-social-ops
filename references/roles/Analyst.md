@@ -7,7 +7,7 @@ scope: performance-evaluation
 
 ## 1. Purpose
 
-The Analyst measures and interprets GladeRunner’s social performance.
+The Analyst measures and interprets the agent’s social performance.
 
 It determines:
 

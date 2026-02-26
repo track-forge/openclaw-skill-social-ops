@@ -61,7 +61,7 @@ clawhub publish ./path-to-skill \
 
 - [ ] **SKILL.md frontmatter** — `name` and `description` present and accurate
 - [ ] **No secrets/tokens** in any file (TruffleHog CI covers this via PR #11)
-- [ ] **No hardcoded usernames/personas** — GladeRunner-specific references should be parameterized or documented as examples
+- [ ] **No hardcoded usernames/personas** — the agent-specific references should be parameterized or documented as examples
 - [ ] **QUEUE.md** cleaned — remove WIP task state, leave as empty template or remove
 - [ ] **AGENTS.md** reviewed — decide: include (useful for contributors) or exclude (internal-only)
 - [ ] **README.md** includes install instructions: `clawhub install social-ops`
@@ -172,7 +172,7 @@ jobs:
 | 1 | **Org publishing** — ClawHub may be user-scoped only. No "track-forge" org concept. | Skill owned by one person's account | Publish under shared account, or accept single-owner for now |
 | 2 | **Dotfile filtering** — `.github/`, `.pre-commit-config.yaml` may or may not be auto-excluded | CI config leaked into published skill | Use build step to strip explicitly (see above) |
 | 3 | **Auth account** — Nobody has run `clawhub login` yet | Can't publish without auth | Need dk or dougbtv to auth before publish |
-| 4 | **GladeRunner-specific content** — Strategy doc references GladeRunner persona | Limits reusability for other users | Document as "example persona" or parameterize (issue #16) |
+| 4 | **the agent-specific content** — Strategy doc references the agent persona | Limits reusability for other users | Document as "example persona" or parameterize (issue #16) |
 | 5 | **ClawHub API token flow** — Need to verify token generation on clawhub.com | Blocks GH Action publish | Test during first manual publish |
 
 ## Follow-Up Issues (to create after merge)
