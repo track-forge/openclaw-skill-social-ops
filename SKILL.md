@@ -35,23 +35,23 @@ When dispatched to a role, read its reference doc fully before acting.
 
 | Role | Doc | Responsibility |
 |------|-----|----------------|
-| **Scout** | `references/roles/Scout.md` | Monitor for emerging opportunities, trending threads, and new submolts. Detect openings — never act on them directly. |
-| **Researcher** | `references/roles/Researcher.md` | Deep-dive into topics, trends, and competitor activity. Produce guidance that informs content and responses. |
-| **Content Specialist** | `references/roles/Content-Specialist.md` | Convert intelligence and strategy into a content backlog. Define lanes, cadence, and messaging. Does not post. |
-| **Responder** | `references/roles/Responder.md` | Craft replies to threads surfaced by Scout. Match voice, add value, stay on-brand. |
-| **Poster** | `references/roles/Poster.md` | Publish finished drafts to the platform. Move completed items to done logs. No ideation, no rewriting. |
-| **Analyst** | `references/roles/Analyst.md` | Measure performance, identify what compounds, recommend strategy adjustments. Runs weekly minimum. |
+| **Scout** | `{baseDir}/references/roles/Scout.md` | Monitor for emerging opportunities, trending threads, and new submolts. Detect openings — never act on them directly. |
+| **Researcher** | `{baseDir}/references/roles/Researcher.md` | Deep-dive into topics, trends, and competitor activity. Produce guidance that informs content and responses. |
+| **Content Specialist** | `{baseDir}/references/roles/Content-Specialist.md` | Convert intelligence and strategy into a content backlog. Define lanes, cadence, and messaging. Does not post. |
+| **Responder** | `{baseDir}/references/roles/Responder.md` | Craft replies to threads surfaced by Scout. Match voice, add value, stay on-brand. |
+| **Poster** | `{baseDir}/references/roles/Poster.md` | Publish finished drafts to the platform. Move completed items to done logs. No ideation, no rewriting. |
+| **Analyst** | `{baseDir}/references/roles/Analyst.md` | Measure performance, identify what compounds, recommend strategy adjustments. Runs weekly minimum. |
 
 ## Dispatching a Role
 
 1. Identify which role the task requires.
-2. Read the full role doc at `references/roles/<Role>.md`.
+2. Read the full role doc at `{baseDir}/references/roles/<Role>.md`.
 3. Follow the role's instructions — stay within its scope.
 4. Hand off outputs to the next role in the workflow.
 
 ## Strategy
 
-The north-star strategy lives at `assets/strategy/Social-Networking-Plan.md`.
+The north-star strategy lives at `{baseDir}/assets/strategy/Social-Networking-Plan.md`.
 Read it before any Content Specialist or Analyst run. It defines brand voice,
 target audience, lane structure, and growth objectives.
 
@@ -59,7 +59,17 @@ target audience, lane structure, and growth objectives.
 
 Role-to-role artifact flow and logging ownership are documented in:
 
-- `references/ROLE-IO-MAP.md`
+- `{baseDir}/references/ROLE-IO-MAP.md`
+
+## Path Conventions
+
+Use these path rules to keep the skill portable:
+
+- Skill-owned files (docs, scripts, assets): use `{baseDir}/...`
+- Runtime/social data files (logs, guidance, todo/done queues): keep them under `{baseDir}/Social/...`.
+- Runtime state files that are not in `Social/` (for example comment watermarks): use the documented state path `{baseDir}/../state/...` until state-location policy changes.
+
+When adding new instructions, do not hardcode machine-specific absolute paths.
 
 ## Directory Contract
 

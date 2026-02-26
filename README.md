@@ -203,3 +203,8 @@ Built for OpenClaw agents.
 For deterministic implementation passes, use `references/tasks/QUEUE.md`
 with the task format in `references/tasks/TEMPLATE.md`.
 
+## Path Conventions
+
+For `{baseDir}` and workspace-relative path rules, see:
+- `docs/PATH-CONVENTIONS.md`
+
