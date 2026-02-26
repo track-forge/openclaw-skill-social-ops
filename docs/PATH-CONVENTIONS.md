@@ -20,20 +20,23 @@ Examples:
 
 `{baseDir}` is resolved by the OpenClaw skill loader at runtime to the installed skill directory.
 
-## 2) Runtime operational data → workspace-relative
+## 2) Runtime operational data
 
-Use paths relative to the `{baseDir}` parent for role runtime artifacts generated during operation:
+Use these locations for role runtime artifacts generated during operation:
 
-- `{baseDir}/../Social/Guidance/**`
-- `{baseDir}/../Social/Content/Todo/**`
-- `{baseDir}/../Social/Content/Done/**`
-- `{baseDir}/../Social/Content/Logs/**`
-- `{baseDir}/../state/comment-state.json`
+- Social skill data lives inside the skill base directory:
+  - `{baseDir}/Social/Guidance/**`
+  - `{baseDir}/Social/Content/Todo/**`
+  - `{baseDir}/Social/Content/Done/**`
+  - `{baseDir}/Social/Content/Logs/**`
+- Comment watermark state remains at:
+  - `{baseDir}/../state/comment-state.json`
 
-These are intentionally not in skill package paths because they are mutable user/runtime data.
+`Social/` is intentionally kept inside `{baseDir}` for this skill.
 
 ## Rule for future edits
 
 - Do not introduce absolute host paths.
 - For packaged skill references, prefer `{baseDir}`.
-- For generated runtime artifacts, keep `{baseDir}`-relative parent paths (for example `{baseDir}/../Social/...`).
+- For generated Social runtime artifacts, keep paths under `{baseDir}/Social/...`.
+- For known state artifacts, use the documented state path until policy changes.

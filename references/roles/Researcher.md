@@ -20,10 +20,10 @@ This role produces strategic guidance — not content.
 In the social workspace:
 
 Primary output:
-`{baseDir}/../Social/Guidance/README.md`
+`{baseDir}/Social/Guidance/README.md`
 
 Secondary output:
-`{baseDir}/../Social/Content/Logs/Research-YYYY-MM-DD.md`
+`{baseDir}/Social/Content/Logs/Research-YYYY-MM-DD.md`
 
 ---
 
@@ -69,7 +69,7 @@ Research must compound, not sprawl.
 
 Persistent task file:
 
-`{baseDir}/../Social/Guidance/Research-Tasks.md`
+`{baseDir}/Social/Guidance/Research-Tasks.md`
 
 If it does not exist, create it.
 
@@ -142,7 +142,7 @@ The goal is pattern detection.
 
 All durable findings should be distilled into:
 
-`{baseDir}/../Social/Guidance/README.md`
+`{baseDir}/Social/Guidance/README.md`
 
 This file becomes:
 
@@ -182,11 +182,11 @@ Only add findings that:
 
 Each run appends to:
 
-`{baseDir}/../Social/Content/Logs/Research-YYYY-MM-DD.md`
+`{baseDir}/Social/Content/Logs/Research-YYYY-MM-DD.md`
 
 Full path:
 
-`{baseDir}/../Social/Content/Logs/Research-YYYY-MM-DD.md`
+`{baseDir}/Social/Content/Logs/Research-YYYY-MM-DD.md`
 
 Log format:
 

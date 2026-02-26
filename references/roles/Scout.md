@@ -48,7 +48,7 @@ This is short-cycle intelligence.
 - Recent post velocity patterns
 
 Social workspace root:
-`{baseDir}/../Social/`
+`{baseDir}/Social/`
 
 ---
 
@@ -80,7 +80,7 @@ Social workspace root:
 
 Scout writes to:
 
-`{baseDir}/../Social/Content/Logs/Scout-YYYY-MM-DD.md`
+`{baseDir}/Social/Content/Logs/Scout-YYYY-MM-DD.md`
 
 Format:
 

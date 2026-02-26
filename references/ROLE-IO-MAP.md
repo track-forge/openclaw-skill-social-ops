@@ -25,7 +25,7 @@ Analyst recommendations ──> Content Specialist + Researcher
 - Reads:
   - Moltbook feed/submolts/accounts (platform data)
 - Writes:
-  - `{baseDir}/../Social/Content/Logs/Scout-YYYY-MM-DD.md`
+  - `{baseDir}/Social/Content/Logs/Scout-YYYY-MM-DD.md`
 - Primary consumers:
   - Responder (thread insertion opportunities)
   - Content Specialist (topic opportunities)
@@ -34,12 +34,12 @@ Analyst recommendations ──> Content Specialist + Researcher
 ## Researcher
 - Reads:
   - Moltbook high-performing posts/accounts
-  - `{baseDir}/../Social/Guidance/Research-Tasks.md` (task queue)
+  - `{baseDir}/Social/Guidance/Research-Tasks.md` (task queue)
   - prior research logs
 - Writes:
-  - `{baseDir}/../Social/Guidance/README.md` (durable guidance)
-  - `{baseDir}/../Social/Guidance/Research-Tasks.md` (task queue updates)
-  - `{baseDir}/../Social/Content/Logs/Research-YYYY-MM-DD.md`
+  - `{baseDir}/Social/Guidance/README.md` (durable guidance)
+  - `{baseDir}/Social/Guidance/Research-Tasks.md` (task queue updates)
+  - `{baseDir}/Social/Content/Logs/Research-YYYY-MM-DD.md`
 - Primary consumers:
   - Content Specialist (content planning)
   - Poster (tone/check alignment)
@@ -47,28 +47,28 @@ Analyst recommendations ──> Content Specialist + Researcher
 
 ## Content Specialist
 - Reads:
-  - `{baseDir}/../Social/Guidance/README.md`
-  - `{baseDir}/../Social/Content/Lanes/`
+  - `{baseDir}/Social/Guidance/README.md`
+  - `{baseDir}/Social/Content/Lanes/`
   - `Projects/`
   - `Creative/`
   - `Reference/Reddit/`
-  - recent `{baseDir}/../Social/Content/Logs/Research-YYYY-MM-DD.md`
+  - recent `{baseDir}/Social/Content/Logs/Research-YYYY-MM-DD.md`
 - Writes:
-  - `{baseDir}/../Social/Content/Todo/YYYY-MM-DD-XX-LaneName.md`
-  - `{baseDir}/../Social/Content/Lanes/*.md` (create/refine/retire lane definitions)
-  - `{baseDir}/../Social/Content/Logs/Content-YYYY-MM-DD.md`
+  - `{baseDir}/Social/Content/Todo/YYYY-MM-DD-XX-LaneName.md`
+  - `{baseDir}/Social/Content/Lanes/*.md` (create/refine/retire lane definitions)
+  - `{baseDir}/Social/Content/Logs/Content-YYYY-MM-DD.md`
 - Primary consumers:
   - Poster (publishes TODO items)
   - Analyst (evaluates lane/post pipeline performance)
 
 ## Poster
 - Reads:
-  - `{baseDir}/../Social/Guidance/README.md`
-  - `{baseDir}/../Social/Content/Todo/`
-  - `{baseDir}/../Social/Content/Lanes/`
+  - `{baseDir}/Social/Guidance/README.md`
+  - `{baseDir}/Social/Content/Todo/`
+  - `{baseDir}/Social/Content/Lanes/`
 - Writes:
-  - `{baseDir}/../Social/Content/Done/` (moves posted file from Todo)
-  - `{baseDir}/../Social/Content/Logs/Poster-YYYY-MM-DD.md`
+  - `{baseDir}/Social/Content/Done/` (moves posted file from Todo)
+  - `{baseDir}/Social/Content/Logs/Poster-YYYY-MM-DD.md`
   - published post URL attached to moved post artifact
 - Primary consumers:
   - Analyst (performance review)
@@ -78,23 +78,23 @@ Analyst recommendations ──> Content Specialist + Researcher
 - Reads:
   - Moltbook replies/DMs/mentions
   - `{baseDir}/../state/comment-state.json`
-  - latest Scout log: `{baseDir}/../Social/Content/Logs/Scout-YYYY-MM-DD.md`
+  - latest Scout log: `{baseDir}/Social/Content/Logs/Scout-YYYY-MM-DD.md`
 - Writes:
   - `{baseDir}/../state/comment-state.json` (watermarks + seen ids)
-  - `{baseDir}/../Social/Content/Logs/Responder-YYYY-MM-DD.md`
+  - `{baseDir}/Social/Content/Logs/Responder-YYYY-MM-DD.md`
 - Primary consumers:
   - Analyst (relational signal quality)
 
 ## Analyst
 - Reads:
-  - `{baseDir}/../Social/Content/Done/`
-  - `{baseDir}/../Social/Content/Logs/Poster-YYYY-MM-DD.md`
-  - `{baseDir}/../Social/Content/Logs/Responder-YYYY-MM-DD.md`
-  - `{baseDir}/../Social/Content/Logs/Scout-YYYY-MM-DD.md`
-  - `{baseDir}/../Social/Content/Logs/Research-YYYY-MM-DD.md`
+  - `{baseDir}/Social/Content/Done/`
+  - `{baseDir}/Social/Content/Logs/Poster-YYYY-MM-DD.md`
+  - `{baseDir}/Social/Content/Logs/Responder-YYYY-MM-DD.md`
+  - `{baseDir}/Social/Content/Logs/Scout-YYYY-MM-DD.md`
+  - `{baseDir}/Social/Content/Logs/Research-YYYY-MM-DD.md`
   - Moltbook engagement metrics
 - Writes:
-  - `{baseDir}/../Social/Content/Logs/Analysis-YYYY-WW.md`
+  - `{baseDir}/Social/Content/Logs/Analysis-YYYY-WW.md`
   - recommendations (consumed by Content Specialist + Researcher)
 - Primary consumers:
   - Content Specialist (lane/cadence changes)
@@ -103,21 +103,21 @@ Analyst recommendations ──> Content Specialist + Researcher
 ## Shared artifact map
 
 - Guidance artifacts:
-  - `{baseDir}/../Social/Guidance/README.md` (producer: Researcher; consumers: Content Specialist, Poster, Analyst)
-  - `{baseDir}/../Social/Guidance/Research-Tasks.md` (producer/consumer: Researcher)
+  - `{baseDir}/Social/Guidance/README.md` (producer: Researcher; consumers: Content Specialist, Poster, Analyst)
+  - `{baseDir}/Social/Guidance/Research-Tasks.md` (producer/consumer: Researcher)
 
 - Pipeline artifacts:
-  - `{baseDir}/../Social/Content/Todo/` (producer: Content Specialist; consumer: Poster)
-  - `{baseDir}/../Social/Content/Done/` (producer: Poster; consumer: Analyst)
-  - `{baseDir}/../Social/Content/Lanes/` (producer: Content Specialist; consumers: Poster, Analyst)
+  - `{baseDir}/Social/Content/Todo/` (producer: Content Specialist; consumer: Poster)
+  - `{baseDir}/Social/Content/Done/` (producer: Poster; consumer: Analyst)
+  - `{baseDir}/Social/Content/Lanes/` (producer: Content Specialist; consumers: Poster, Analyst)
 
 - Log artifacts:
-  - `{baseDir}/../Social/Content/Logs/Scout-YYYY-MM-DD.md` (producer: Scout; consumers: Responder, Analyst)
-  - `{baseDir}/../Social/Content/Logs/Research-YYYY-MM-DD.md` (producer: Researcher; consumers: Content Specialist, Analyst)
-  - `{baseDir}/../Social/Content/Logs/Content-YYYY-MM-DD.md` (producer: Content Specialist; consumer: Analyst)
-  - `{baseDir}/../Social/Content/Logs/Poster-YYYY-MM-DD.md` (producer: Poster; consumer: Analyst)
-  - `{baseDir}/../Social/Content/Logs/Responder-YYYY-MM-DD.md` (producer: Responder; consumer: Analyst)
-  - `{baseDir}/../Social/Content/Logs/Analysis-YYYY-WW.md` (producer: Analyst; consumers: Content Specialist, Researcher)
+  - `{baseDir}/Social/Content/Logs/Scout-YYYY-MM-DD.md` (producer: Scout; consumers: Responder, Analyst)
+  - `{baseDir}/Social/Content/Logs/Research-YYYY-MM-DD.md` (producer: Researcher; consumers: Content Specialist, Analyst)
+  - `{baseDir}/Social/Content/Logs/Content-YYYY-MM-DD.md` (producer: Content Specialist; consumer: Analyst)
+  - `{baseDir}/Social/Content/Logs/Poster-YYYY-MM-DD.md` (producer: Poster; consumer: Analyst)
+  - `{baseDir}/Social/Content/Logs/Responder-YYYY-MM-DD.md` (producer: Responder; consumer: Analyst)
+  - `{baseDir}/Social/Content/Logs/Analysis-YYYY-WW.md` (producer: Analyst; consumers: Content Specialist, Researcher)
 
 - Runtime state artifacts:
   - `{baseDir}/../state/comment-state.json` (producer/consumer: Responder)

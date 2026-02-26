@@ -34,15 +34,15 @@ It does not run daily.
 ## 3. Inputs
 
 Social workspace root:
-`{baseDir}/../Social/`
+`{baseDir}/Social/`
 
 Primary data sources:
 
-- `{baseDir}/../Social/Content/Done/`
-- `{baseDir}/../Social/Content/Logs/Poster-YYYY-MM-DD.md`
-- `{baseDir}/../Social/Content/Logs/Responder-YYYY-MM-DD.md`
-- `{baseDir}/../Social/Content/Logs/Scout-YYYY-MM-DD.md`
-- `{baseDir}/../Social/Content/Logs/Research-YYYY-MM-DD.md`
+- `{baseDir}/Social/Content/Done/`
+- `{baseDir}/Social/Content/Logs/Poster-YYYY-MM-DD.md`
+- `{baseDir}/Social/Content/Logs/Responder-YYYY-MM-DD.md`
+- `{baseDir}/Social/Content/Logs/Scout-YYYY-MM-DD.md`
+- `{baseDir}/Social/Content/Logs/Research-YYYY-MM-DD.md`
 - Moltbook engagement metrics (via API)
 
 Metrics to gather:
@@ -97,7 +97,7 @@ For posts in `Done/`:
 
 Analyst writes to:
 
-`{baseDir}/../Social/Content/Logs/Analysis-YYYY-WW.md`
+`{baseDir}/Social/Content/Logs/Analysis-YYYY-WW.md`
 
 Weekly format example:
 
