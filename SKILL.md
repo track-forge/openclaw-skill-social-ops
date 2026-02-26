@@ -61,13 +61,12 @@ Role-to-role artifact flow and logging ownership are documented in:
 
 - `{baseDir}/references/ROLE-IO-MAP.md`
 
-
 ## Path Conventions
 
 Use these path rules to keep the skill portable:
 
 - Skill-owned files (docs, scripts, assets): use `{baseDir}/...`
-- Runtime/social data files (logs, todo/done queues, state): use workspace-relative paths such as `Social/...` and `state/...`
+- Runtime/social data files (logs, todo/done queues, state): use paths relative to `{baseDir}` parent, such as `../Social/...` and `../state/...`
 
 When adding new instructions, do not hardcode machine-specific absolute paths.
 

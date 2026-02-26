@@ -30,12 +30,12 @@ It synthesizes intelligence into output.
 ## 2. Primary Inputs
 
 Social workspace root:
-`Social/`
+`../Social/`
 
 The Content Specialist must review:
 
-1. `Social/Guidance/README.md`
-2. `Social/Content/Lanes/`
+1. `../Social/Guidance/README.md`
+2. `../Social/Content/Lanes/`
 3. `Projects/`
 4. `Creative/`
 5. `Reference/Reddit/`
@@ -49,7 +49,7 @@ Before generating new posts.
 
 Lane files live in:
 
-`Social/Content/Lanes/`
+`../Social/Content/Lanes/`
 
 Each lane file should define:
 
@@ -117,7 +117,7 @@ On each run:
 
 Create new post files in:
 
-`Social/Content/Todo/`
+`../Social/Content/Todo/`
 
 Each post should:
 
@@ -143,7 +143,7 @@ Identity must remain consistent.
 
 Each file:
 
-`Social/Content/Todo/YYYY-MM-DD-XX-LaneName.md`
+`../Social/Content/Todo/YYYY-MM-DD-XX-LaneName.md`
 
 Frontmatter example:
 
@@ -203,7 +203,7 @@ It builds the pipeline.
 
 Each run appends to:
 
-`Social/Content/Logs/Content-YYYY-MM-DD.md`
+`../Social/Content/Logs/Content-YYYY-MM-DD.md`
 
 Log format:
 
