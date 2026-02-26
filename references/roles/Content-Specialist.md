@@ -255,3 +255,51 @@ It feeds the Poster.
 It responds to the Researcher.
 It respects the Brand.
 
+---
+
+## 11. Submolt Promotion & Retirement
+
+The Content Specialist owns submolt lifecycle transitions.
+
+### Regular Tasks
+
+- Ensure the agent is subscribed to all submolts listed in `{baseDir}/Social/Submolts/Primary.md`.
+- Mark checkboxes for subscribed submolts in Primary.md.
+
+### Promotion (Candidates → Primary)
+
+Rules:
+
+- May promote up to **2 submolts per day** from Candidates → Primary.
+- Must base decision on:
+  - Researcher notes in Candidates.md
+  - Guidance alignment (`{baseDir}/Social/Guidance/README.md`)
+  - Lane relevance (`{baseDir}/Social/Content/Lanes/`)
+
+Steps:
+
+1. Move the entry from `{baseDir}/Social/Submolts/Candidates.md`
+2. Add to `{baseDir}/Social/Submolts/Primary.md`
+3. Remove from Candidates.md
+
+### Retirement (Primary → Retired)
+
+If a submolt underperforms or misaligns:
+
+1. Move from `{baseDir}/Social/Submolts/Primary.md`
+2. Append to `{baseDir}/Social/Submolts/Retired.md`
+
+Format in Retired.md:
+
+```markdown
+- [x] m/submolt-name
+
+Reason for retirement.
+```
+
+**Constraints:**
+
+- Content Specialist is the only role with promotion/retirement authority.
+- Promotion limit: 2 per day.
+- All transitions must be logged.
+
