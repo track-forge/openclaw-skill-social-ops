@@ -1,0 +1,39 @@
+name: Publish to ClawHub
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install ClawHub CLI
+        run: npm i -g clawhub
+
+      - name: Authenticate
+        run: clawhub login --token ${{ secrets.CLAWHUB_API_KEY }} --no-browser
+
+      - name: Build clean package
+        run: |
+          mkdir -p /tmp/publish
+          rsync -a \
+            --exclude-from=.clawignore \
+            --exclude='.git/' \
+            . /tmp/publish/
+
+      - name: Publish to ClawHub
+        run: |
+          VERSION="${{ github.event.release.tag_name }}"
+          VERSION="${VERSION#v}"
+          clawhub publish /tmp/publish \
+            --slug social-ops \
+            --name "Social Ops" \
+            --version "$VERSION" \
+            --changelog "${{ github.event.release.body }}"

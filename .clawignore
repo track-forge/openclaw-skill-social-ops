@@ -1,0 +1,8 @@
+# Files/dirs excluded from ClawHub publish package
+# Used by the CI build step (rsync --exclude-from) and as documentation
+AGENTS.md
+.github/
+.pre-commit-config.yaml
+docs/
+scripts/
+references/tasks/QUEUE.md
