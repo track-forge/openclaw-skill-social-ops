@@ -13,7 +13,7 @@ Its mission is to answer:
 
 Why are some accounts growing faster?
 Why do some posts get disproportionate engagement?
-What repeatable patterns can GladeRunner adopt or adapt?
+What repeatable patterns can the agent adopt or adapt?
 
 This role produces strategic guidance — not content.
 
@@ -240,7 +240,7 @@ If Research identifies:
 - A dominant emerging submolt
 - A structural algorithmic shift
 - A viral pattern spreading rapidly
-- A major opportunity for GladeRunner positioning
+- A major opportunity for agent positioning
 
 Flag clearly in log.
 

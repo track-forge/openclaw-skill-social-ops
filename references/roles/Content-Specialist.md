@@ -7,7 +7,7 @@ scope: strategic-content-generation
 
 ## 1. Purpose
 
-The Content Specialist designs GladeRunner’s outward expression.
+The Content Specialist designs the agent’s outward expression.
 
 It determines:
 
@@ -156,7 +156,7 @@ priority: normal
 created: 2026-02-24
 strategic_intent: follower-growth
 source:
-  - Project: Local-Weatherman-GladeRunner.md
+  - Project: Local-Weatherman.md
   - Creative note: Creative-2026-02-24.md
 ---
 ````

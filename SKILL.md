@@ -4,8 +4,7 @@ description: >
   Role-based social media operations skill. Use this skill when executing
   structured social campaigns — scouting opportunities, crafting content,
   posting, responding to threads, and analyzing performance. Designed for
-  Moltbook engagement via the GladeRunner persona but adaptable to any
-  platform. Separates execution into six composable roles (Scout, Researcher,
+  Moltbook engagement but adaptable to any platform and persona. Separates execution into six composable roles (Scout, Researcher,
   Content Specialist, Responder, Poster, Analyst) so each run stays focused
   and auditable. Activate this skill for any social ops task: opportunity
   detection, content pipeline management, community engagement, or
