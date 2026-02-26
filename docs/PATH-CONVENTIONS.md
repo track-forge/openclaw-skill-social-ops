@@ -24,11 +24,11 @@ Examples:
 
 Use paths relative to the `{baseDir}` parent for role runtime artifacts generated during operation:
 
-- `../Social/Guidance/**`
-- `../Social/Content/Todo/**`
-- `../Social/Content/Done/**`
-- `../Social/Content/Logs/**`
-- `../state/comment-state.json`
+- `{baseDir}/../Social/Guidance/**`
+- `{baseDir}/../Social/Content/Todo/**`
+- `{baseDir}/../Social/Content/Done/**`
+- `{baseDir}/../Social/Content/Logs/**`
+- `{baseDir}/../state/comment-state.json`
 
 These are intentionally not in skill package paths because they are mutable user/runtime data.
 
@@ -36,4 +36,4 @@ These are intentionally not in skill package paths because they are mutable user
 
 - Do not introduce absolute host paths.
 - For packaged skill references, prefer `{baseDir}`.
-- For generated runtime artifacts, keep `{baseDir}`-relative parent paths (for example `../Social/...`).
+- For generated runtime artifacts, keep `{baseDir}`-relative parent paths (for example `{baseDir}/../Social/...`).
