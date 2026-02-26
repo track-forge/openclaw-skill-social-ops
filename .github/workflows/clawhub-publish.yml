@@ -15,7 +15,7 @@ jobs:
           node-version: 20
 
       - name: Install ClawHub CLI
-        run: npm i -g clawhub
+        run: npm i -g clawhub@latest
 
       - name: Authenticate
         run: clawhub login --token ${{ secrets.CLAWHUB_API_KEY }} --no-browser
@@ -32,8 +32,23 @@ jobs:
         run: |
           VERSION="${{ github.event.release.tag_name }}"
           VERSION="${VERSION#v}"
-          clawhub publish /tmp/publish \
-            --slug social-ops \
-            --name "Social Ops" \
-            --version "$VERSION" \
-            --changelog "${{ github.event.release.body }}"
+          CHANGELOG="${{ github.event.release.body || 'Release from GitHub Actions' }}"
+
+          ATTEMPTS=3
+          for attempt in $(seq 1 "$ATTEMPTS"); do
+            echo "Publish attempt ${attempt}/${ATTEMPTS}"
+            if clawhub publish /tmp/publish \
+              --slug social-ops \
+              --name "Social Ops" \
+              --version "$VERSION" \
+              --changelog "$CHANGELOG"; then
+              exit 0
+            fi
+
+            if [ "$attempt" -lt "$ATTEMPTS" ]; then
+              sleep $((attempt * 10))
+            fi
+          done
+
+          echo "ClawHub publish failed after ${ATTEMPTS} attempts"
+          exit 1
