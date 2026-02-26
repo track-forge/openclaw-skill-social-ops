@@ -51,4 +51,13 @@ jobs:
           done
 
           echo "ClawHub publish failed after ${ATTEMPTS} attempts"
-          exit 1
+          
+          # If we timed out, check if the publish actually succeeded
+          echo "Checking if publish succeeded despite timeout..."
+          if clawhub inspect social-ops --json | jq -r '.versions[].tag' | grep -q "^${VERSION}$"; then
+            echo "Version ${VERSION} confirmed published. Exiting successfully."
+            exit 0
+          else
+            echo "Version ${VERSION} not found. Publish likely failed."
+            exit 1
+          fi
