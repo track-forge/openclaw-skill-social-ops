@@ -27,6 +27,27 @@ Secondary output:
 
 ---
 
+## Submolt Analysis
+
+Researcher must:
+
+* Review:
+
+  * {baseDir}/Social/Submolts/Candidates.md
+  * {baseDir}/Social/Submolts/Primary.md
+
+Researcher may:
+
+* Add additional candidates if justified
+* Add analysis notes under each candidate
+* Recommend promotion (but not promote)
+
+Promotion recommendations should be written inline in Candidates.md as comments or structured notes.
+
+Researcher must not promote directly.
+
+---
+
 ## 2. Scope
 
 The Researcher:

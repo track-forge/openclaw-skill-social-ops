@@ -23,6 +23,41 @@ It does not act on them directly.
 
 ---
 
+## Submolt Discovery
+
+Scout must:
+
+* Read:
+
+  * {baseDir}/Social/Guidance/README.md
+  * {baseDir}/Social/Content/Lanes/
+  * {baseDir}/Social/Submolts/Primary.md
+  * {baseDir}/Social/Submolts/Candidates.md
+
+Scout should identify up to **3 new candidate submolts per run**.
+
+For each candidate:
+
+* Ensure it is not already in Primary or Candidates
+* Add to:
+
+{baseDir}/Social/Submolts/Candidates.md
+
+Format:
+
+```markdown
+- [ ] m/submolt-name
+
+Short description of why it aligns.
+Optional notes on tone/activity.
+```
+
+Scout must not promote submolts directly.
+
+Scout only writes to Candidates.md.
+
+---
+
 ## 2. Time Horizon
 
 Scout operates in the near-term window:
