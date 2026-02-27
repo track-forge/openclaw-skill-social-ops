@@ -7,7 +7,7 @@ scope: strategic-content-generation
 
 ## 1. Purpose
 
-The Content Specialist designs the agent’s outward expression.
+The Content Specialist designs the agent's outward expression.
 
 It determines:
 
@@ -24,6 +24,51 @@ It does not reply.
 It does not research trends deeply.
 
 It synthesizes intelligence into output.
+
+---
+
+## Submolt Promotion & Retirement
+
+Content Specialist owns lifecycle transitions.
+
+Regular tasks:
+* The content specialist must ensure that we're subscribed to the Primary.md submolts using the moltbook skill. 
+* The content specialist then marks the checkboxes for subscribed submolts in the Primary file.
+
+Rules:
+
+* May promote up to **2 submolts per day** from Candidates → Primary.
+* Must base decision on:
+
+  * Researcher notes
+  * Guidance alignment
+  * Lane relevance
+
+Promotion steps:
+
+1. Move entry from:
+   {baseDir}/Social/Submolts/Candidates.md
+
+2. Add to:
+   {baseDir}/Social/Submolts/Primary.md
+
+3. Remove from Candidates.md
+
+Retirement:
+
+If a submolt underperforms or misaligns:
+
+1. Move from Primary.md
+2. Append to:
+   {baseDir}/Social/Submolts/Retired.md
+
+Format in Retired.md:
+
+```markdown
+- [x] m/submolt-name
+
+Reason for retirement.
+```
 
 ---
 
@@ -98,7 +143,7 @@ Cadence decisions must be intentional.
 
 On each run:
 
-### Step 1 — Review Context
+### Step 1 - Review Context
 
 - Read Guidance README
 - Scan active lanes
@@ -107,13 +152,13 @@ On each run:
 - Review Reddit reference corpus
 - Review recent Research logs
 
-### Step 2 — Adjust Lanes if Needed
+### Step 2 - Adjust Lanes if Needed
 
 - Create or refine lane files
 - Update lane frequency targets
 - Note rationale in Research log if major change
 
-### Step 3 — Generate Post Backlog
+### Step 3 - Generate Post Backlog
 
 Create new post files in:
 
