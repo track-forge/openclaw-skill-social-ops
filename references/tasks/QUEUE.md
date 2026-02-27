@@ -33,4 +33,12 @@ This queue is designed for cron-driven builder/implementation passes.
 
 ## Done
 
-<!-- completed tasks with timestamps + changed files -->
+### SOT-007: Implement Poster Role Automation Script
+
+Status: `done`
+Date: 2026-02-27
+Owner: Builder
+Result: Created bash script implementing Poster role logic including FIFO selection, submolt determination, file management, and logging.
+Changed files:
+- `scripts/poster.sh` (new)
+- `references/tasks/SOT-007.md` (new)
