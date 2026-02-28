@@ -33,6 +33,16 @@ This queue is designed for cron-driven builder/implementation passes.
 
 ## Done
 
+### SOT-009: Implement Responder role automation script
+
+Status: `done`
+Date: 2026-02-28
+Owner: Builder
+Result: Implemented the Responder role automation script according to Social/Roles/Responder.md specifications.
+Changed files:
+- `scripts/responder.sh` (new)
+- `references/tasks/SOT-009.md` (new)
+
 ### SOT-007: Implement Poster Role Automation Script
 
 Status: `done`
