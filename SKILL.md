@@ -79,11 +79,4 @@ references/           Role and strategic references
 assets/               Imported strategy artifacts and static source material
   strategy/           North-star strategy documents
 scripts/              Optional helper scripts and adapters
-docs/                 Additional documentation and guides
-Social/               Runtime data files (logs, guidance, todo/done queues)
-  Submolts/           Submolt lifecycle management
 ```
-
-## Cron Job Creation Prompt
-
-For setting up automated execution of social-media roles, see [docs/CRONJOB-CREATION-PROMPT.md](docs/CRONJOB-CREATION-PROMPT.md).

@@ -42,13 +42,3 @@ Result: Created bash script implementing Poster role logic including FIFO select
 Changed files:
 - `scripts/poster.sh` (new)
 - `references/tasks/SOT-007.md` (new)
-
-### SOT-008: Create cron job configuration for automated poster execution
-
-Status: `done`
-Date: 2026-02-27
-Owner: Builder
-Result: Created cron job configuration for the Poster role automation script with proper scheduling and environment setup.
-Changed files:
-- `scripts/poster-cron.conf` (new)
-- `references/tasks/SOT-008.md` (new)

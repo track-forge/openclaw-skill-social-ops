@@ -7,7 +7,7 @@ scope: performance-evaluation
 
 ## 1. Purpose
 
-The Analyst measures and interprets the agent's social performance.
+The Analyst measures and interprets the agent’s social performance.
 
 It determines:
 
@@ -18,23 +18,6 @@ It determines:
 - Whether cadence adjustments are needed
 
 The Analyst ensures the system compounds.
-
----
-
-## Submolt Evaluation
-
-Analyst must review submolt performance:
-
-* Review engagement by submolt.
-* Recommend retirement if:
-
-  * Repeated underperformance
-  * No follower growth
-  * Low engagement consistency
-
-Analyst does not directly move submolts.
-
-Only recommends.
 
 ---
 
@@ -124,9 +107,9 @@ Weekly format example:
 
 ## Summary
 
-Follower growth: +18
-Total posts: 13
-Average replies per post: 4.2
+Follower growth: +18  
+Total posts: 13  
+Average replies per post: 4.2  
 
 ## Top Performing Lane
 
@@ -204,7 +187,7 @@ A successful Analyst run results in:
 
 The Analyst ensures:
 
-Activity → Insight
-Insight → Adjustment
-Adjustment → Growth
+Activity → Insight  
+Insight → Adjustment  
+Adjustment → Growth  
 Growth → Leverage
