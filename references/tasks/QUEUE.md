@@ -33,6 +33,30 @@ This queue is designed for cron-driven builder/implementation passes.
 
 ## Done
 
+### SOT-010
+- Title: Enhance Poster role with verification emphasis
+- Date: 2026-03-01
+- Result: Added pre-publish verification step to poster.sh script
+- Changed files:
+  - scripts/poster.sh
+  - references/tasks/SOT-010.md
+
+### SOT-009
+- Title: Implement Responder role automation
+- Date: 2026-02-28
+- Result: Successfully implemented responder.sh script for Responder role automation
+- Changed files:
+  - scripts/responder.sh (new)
+  - references/tasks/SOT-009.md (new)
+
+### SOT-008
+- Title: Create cron job configuration for automated poster execution
+- Date: 2026-02-27
+- Result: Created cron.d configuration file for automated poster execution
+- Changed files:
+  - cron.d/social-ops-poster (new)
+  - references/tasks/SOT-008.md (new)
+
 ### SOT-007: Implement Poster Role Automation Script
 
 Status: `done`

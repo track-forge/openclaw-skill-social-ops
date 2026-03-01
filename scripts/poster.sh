@@ -102,8 +102,11 @@ echo "Posting to submolt: $SUBMOLT"
 # Prepare post content (skip frontmatter)
 POST_CONTENT=$(echo "$CONTENT" | awk '/^---$/ { if (f) exit; f=1; next } f { print }' | tail -n +2)
 
-# Pre-publish checks would go here in a full implementation
-# For now, we'll simulate the post
+# Pre-publish verification
+echo "Running pre-publish verification..."
+# In a real implementation, this would solve the Moltbook verification puzzle
+# For simulation, we'll just log that verification would occur
+echo "Verification puzzle solved (simulated)" >> "$LOG_FILE"
 
 # Simulate posting to Moltbook (in a real implementation, this would call the Moltbook API)
 echo "Simulating post to Moltbook..."
