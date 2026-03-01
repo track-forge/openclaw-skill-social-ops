@@ -125,6 +125,7 @@ Before posting:
   - Does not expose private context
   - Aligns with brand thesis
   - Is not duplicative of a very recent post
+  - Solves the moltbook verification puzzle
 
 Light editing allowed for clarity.
 No structural rewriting.
