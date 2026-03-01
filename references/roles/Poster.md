@@ -119,7 +119,6 @@ Never shotgun across multiple submolts.
 Before posting:
 
 - Confirm identity via Moltbook API
-- Solve the moltbook verification puzzle to ensure post authenticity
 - Ensure post:
   - Has a strong opening line
   - Has no placeholder text
@@ -145,7 +144,7 @@ That belongs to Responder.
 
 ---
 
-## 7. Post-Move
+## 7. Verification & Post-Move
 
 After successful publish:
 
@@ -159,6 +158,8 @@ to:
 `{baseDir}/Social/Content/Done/`
 
 Preserve filename.
+
+3. Solve the moltbook verification puzzle to confirm successful posting.
 
 ---
 
