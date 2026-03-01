@@ -10,12 +10,12 @@ Use it to:
 ## Canonical workflow
 
 ```text
-Scout ──┬─> Content Specialist ──> Poster
+Scout ──┬─> Content Specialist ──> Writer ──> Poster
         └─> Responder
 
-Researcher ──> Guidance ──> Content Specialist + Poster (+ Analyst for review context)
+Researcher ──> Guidance ──> Content Specialist + Writer + Poster (+ Analyst for review context)
 
-Poster + Scout + Responder + Researcher outputs ──> Analyst
+Poster + Scout + Responder + Researcher + Writer outputs ──> Analyst
 Analyst recommendations ──> Content Specialist + Researcher
 ```
 
@@ -63,15 +63,29 @@ Analyst recommendations ──> Content Specialist + Researcher
   - `{baseDir}/Social/Submolts/Primary.md`
   - local files/directories referenced by `Local-File-References.md` (only if present/accessible)
 - Writes:
-  - `{baseDir}/Social/Content/Todo/YYYY-MM-DD-XX-LaneName.md`
   - `{baseDir}/Social/Content/Lanes/*.md` (create/refine/retire lane definitions)
   - `{baseDir}/Social/Content/Logs/Content-YYYY-MM-DD.md`
   - `{baseDir}/Social/Submolts/Primary.md` (promotions from Candidates)
   - `{baseDir}/Social/Submolts/Candidates.md` (removals after promotion)
   - `{baseDir}/Social/Submolts/Retired.md` (retired submolts)
 - Primary consumers:
-  - Poster (publishes TODO items)
+  - Writer (drafts posts based on lanes)
   - Analyst (evaluates lane/post pipeline performance)
+
+## Writer
+- Reads:
+  - `{baseDir}/Social/Content/Lanes/` (selects one lane per run)
+  - `{baseDir}/Social/Content/Todo/` (queue depth check)
+  - `{baseDir}/Social/Submolts/Primary.md`
+  - `{baseDir}/Social/Guidance/Local-File-References.md` (optional, human-curated)
+  - local files/directories referenced by `Local-File-References.md` (only if present/accessible)
+  - recent `{baseDir}/Social/Content/Logs/Research-YYYY-MM-DD.md`
+- Writes:
+  - `{baseDir}/Social/Content/Todo/YYYY-MM-DD-XX-LaneName.md`
+  - `{baseDir}/Social/Content/Logs/Writer-YYYY-MM-DD.md`
+- Primary consumers:
+  - Poster (publishes TODO items)
+  - Analyst (evaluates post quality and queue balance)
 
 ## Poster
 - Reads:
@@ -101,6 +115,7 @@ Analyst recommendations ──> Content Specialist + Researcher
 - Reads:
   - `{baseDir}/Social/Content/Done/`
   - `{baseDir}/Social/Content/Logs/Poster-YYYY-MM-DD.md`
+  - `{baseDir}/Social/Content/Logs/Writer-YYYY-MM-DD.md`
   - `{baseDir}/Social/Content/Logs/Responder-YYYY-MM-DD.md`
   - `{baseDir}/Social/Content/Logs/Scout-YYYY-MM-DD.md`
   - `{baseDir}/Social/Content/Logs/Research-YYYY-MM-DD.md`
@@ -118,10 +133,10 @@ Analyst recommendations ──> Content Specialist + Researcher
 - Guidance artifacts:
   - `{baseDir}/Social/Guidance/README.md` (producer: Researcher; consumers: Content Specialist, Poster, Analyst)
   - `{baseDir}/Social/Guidance/Research-Tasks.md` (producer/consumer: Researcher)
-  - `{baseDir}/Social/Guidance/Local-File-References.md` (producer: human operator and/or Researcher; consumer: Content Specialist)
+  - `{baseDir}/Social/Guidance/Local-File-References.md` (producer: human operator and/or Researcher; consumers: Content Specialist, Writer)
 
 - Pipeline artifacts:
-  - `{baseDir}/Social/Content/Todo/` (producer: Content Specialist; consumer: Poster)
+  - `{baseDir}/Social/Content/Todo/` (producer: Writer; consumer: Poster)
   - `{baseDir}/Social/Content/Done/` (producer: Poster; consumer: Analyst)
   - `{baseDir}/Social/Content/Lanes/` (producer: Content Specialist; consumers: Poster, Analyst)
 
@@ -129,6 +144,7 @@ Analyst recommendations ──> Content Specialist + Researcher
   - `{baseDir}/Social/Content/Logs/Scout-YYYY-MM-DD.md` (producer: Scout; consumers: Responder, Analyst)
   - `{baseDir}/Social/Content/Logs/Research-YYYY-MM-DD.md` (producer: Researcher; consumers: Content Specialist, Analyst)
   - `{baseDir}/Social/Content/Logs/Content-YYYY-MM-DD.md` (producer: Content Specialist; consumer: Analyst)
+  - `{baseDir}/Social/Content/Logs/Writer-YYYY-MM-DD.md` (producer: Writer; consumer: Analyst)
   - `{baseDir}/Social/Content/Logs/Poster-YYYY-MM-DD.md` (producer: Poster; consumer: Analyst)
   - `{baseDir}/Social/Content/Logs/Responder-YYYY-MM-DD.md` (producer: Responder; consumer: Analyst)
   - `{baseDir}/Social/Content/Logs/Analysis-YYYY-WW.md` (producer: Analyst; consumers: Content Specialist, Researcher)

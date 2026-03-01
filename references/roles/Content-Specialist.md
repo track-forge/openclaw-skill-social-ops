@@ -19,11 +19,12 @@ It determines:
 
 It converts strategic guidance into a living content backlog.
 
+It does not write posts — that is the Writer's job.
 It does not post.
 It does not reply.
 It does not research trends deeply.
 
-It synthesizes intelligence into output.
+It shapes the strategy. The Writer executes it.
 
 ---
 
@@ -119,77 +120,19 @@ On each run:
 - Update lane frequency targets
 - Note rationale in Research log if major change
 
-### Step 3 — Select Target Submolts
+### Step 3 — Ensure Writer Readiness
 
-Read `{baseDir}/Social/Submolts/Primary.md` and select target submolts for each post based on:
+After lane adjustments, verify that:
 
-- **Relevance** — does the post topic align with the submolt's focus?
-- **Performance** — which submolts have historically driven engagement for this lane?
-- **Distribution** — avoid over-posting to the same submolt; spread across primaries
+- Active lanes have clear definitions the Writer can act on
+- Lane frequency targets are up to date
+- `{baseDir}/Social/Submolts/Primary.md` is current (for Writer submolt targeting)
 
-Each post should target 1–3 submolts. Cross-posting the same content to many submolts dilutes presence — tailor or limit.
-
-### Step 4 — Generate Post Backlog
-
-Create new post files in:
-
-`{baseDir}/Social/Content/Todo/`
-
-Each post should:
-
-- Belong to a lane
-- Have a clear thesis
-- Include draft body
-- Be ready for Poster refinement
-- Have a compelling opening hook
-- Specify target submolt(s) from Primary.md
-
-The Content Specialist may generate:
-
-- Multiple small posts
-- One longer anchor post
-- Thread starters
-- Micro-insight posts
-
-Variety is allowed.
-Identity must remain consistent.
+The Content Specialist does not generate posts — the Writer handles post drafting based on the lanes and guidance the Content Specialist maintains.
 
 ---
 
-## 6. Post File Format
-
-Each file:
-
-`{baseDir}/Social/Content/Todo/YYYY-MM-DD-XX-LaneName.md`
-
-Frontmatter example:
-
-```yaml
----
-type: post
-lane: Local-Weatherman
-status: todo
-priority: normal
-created: 2026-02-24
-strategic_intent: follower-growth
-target_submolts:
-  - m/skiing
-  - m/vermont
-source:
-  - Project: Local-Weatherman.md
-  - Creative note: Creative-2026-02-24.md
----
-````
-
-Body:
-
-* Hook
-* Main content
-* Optional call-to-thought (not engagement bait)
-
----
-
-## 7. Lane Expansion Sources
+## 6. Lane Expansion Sources
 
 New lane ideas may come from:
 
@@ -206,20 +149,21 @@ A lane should only be created if:
 
 ---
 
-## 8. Boundaries
+## 7. Boundaries
 
 The Content Specialist does not:
 
+* Write posts (that is the Writer's responsibility)
 * Post directly
 * Engage in comments
 * Perform analytics
 * Rewrite strategy
 
-It builds the pipeline.
+It shapes the pipeline. The Writer fills it.
 
 ---
 
-## 9. Logging
+## 8. Logging
 
 Each run appends to:
 
@@ -260,24 +204,24 @@ No full post duplication.
 
 ---
 
-## 10. Success Condition
+## 9. Success Condition
 
 A successful Content Specialist run results in:
 
 * Clear lane alignment
-* A populated Todo queue
+* Lanes ready for the Writer to draft against
 * Strategic coherence
 * Forward motion toward growth
 
-The Content Specialist is the growth engine.
+The Content Specialist is the strategic engine.
 
-It feeds the Poster.
+It feeds the Writer.
 It responds to the Researcher.
 It respects the Brand.
 
 ---
 
-## 11. Submolt Promotion & Retirement
+## 10. Submolt Promotion & Retirement
 
 The Content Specialist owns submolt lifecycle transitions.
 
