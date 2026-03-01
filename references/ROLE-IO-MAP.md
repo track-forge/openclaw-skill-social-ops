@@ -56,13 +56,12 @@ Analyst recommendations ──> Content Specialist + Researcher
 ## Content Specialist
 - Reads:
   - `{baseDir}/Social/Guidance/README.md`
+  - `{baseDir}/Social/Guidance/Local-File-References.md` (optional, human-curated)
   - `{baseDir}/Social/Content/Lanes/`
-  - `Projects/`
-  - `Creative/`
-  - `Reference/Reddit/`
   - recent `{baseDir}/Social/Content/Logs/Research-YYYY-MM-DD.md`
   - `{baseDir}/Social/Submolts/Candidates.md`
   - `{baseDir}/Social/Submolts/Primary.md`
+  - local files/directories referenced by `Local-File-References.md` (only if present/accessible)
 - Writes:
   - `{baseDir}/Social/Content/Todo/YYYY-MM-DD-XX-LaneName.md`
   - `{baseDir}/Social/Content/Lanes/*.md` (create/refine/retire lane definitions)
@@ -119,6 +118,7 @@ Analyst recommendations ──> Content Specialist + Researcher
 - Guidance artifacts:
   - `{baseDir}/Social/Guidance/README.md` (producer: Researcher; consumers: Content Specialist, Poster, Analyst)
   - `{baseDir}/Social/Guidance/Research-Tasks.md` (producer/consumer: Researcher)
+  - `{baseDir}/Social/Guidance/Local-File-References.md` (producer: human operator and/or Researcher; consumer: Content Specialist)
 
 - Pipeline artifacts:
   - `{baseDir}/Social/Content/Todo/` (producer: Content Specialist; consumer: Poster)
