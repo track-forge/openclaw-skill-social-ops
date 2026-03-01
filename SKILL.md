@@ -65,7 +65,7 @@ Role-to-role artifact flow and logging ownership are documented in:
 Use these path rules to keep the skill portable:
 
 - Skill-owned files (docs, scripts, assets): use `{baseDir}/...`
-- Runtime/social data files (logs, guidance, todo/done queues): keep them under `{baseDir}/Social/...`.
+- Runtime/social data files (logs, guidance, todo/done queues): keep them under `<workspace>/Social/...`.
 - Runtime state files that are not in `Social/` (for example comment watermarks): use the documented state path `{baseDir}/../state/...` until state-location policy changes.
 
 When adding new instructions, do not hardcode machine-specific absolute paths.
