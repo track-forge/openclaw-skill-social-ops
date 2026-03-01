@@ -31,20 +31,20 @@ It shapes the strategy. The Writer executes it.
 ## 2. Primary Inputs
 
 Social workspace root:
-`{baseDir}/Social/`
+`<workspace>/Social/`
 
 The Content Specialist must review:
 
-1. `{baseDir}/Social/Guidance/README.md`
-2. `{baseDir}/Social/Content/Lanes/`
-3. `{baseDir}/Social/Submolts/Primary.md`
+1. `<workspace>/Social/Guidance/README.md`
+2. `<workspace>/Social/Content/Lanes/`
+3. `<workspace>/Social/Submolts/Primary.md`
 4. Recent Research logs
 
 Before adjusting lanes or guidance.
 
 Optional local content references (human-configurable):
 
-- If present, read `{baseDir}/Social/Guidance/Local-File-References.md`.
+- If present, read `<workspace>/Social/Guidance/Local-File-References.md`.
 - Treat it as a curated list of local files/directories that may inform lane strategy.
 - Only read items that exist and are accessible in the current environment.
 - Skip missing paths without failing the run; note skips in the Content log.
@@ -55,7 +55,7 @@ Optional local content references (human-configurable):
 
 Lane files live in:
 
-`{baseDir}/Social/Content/Lanes/`
+`<workspace>/Social/Content/Lanes/`
 
 Each lane file should define:
 
@@ -109,7 +109,7 @@ On each run:
 - Read Guidance README
 - Scan active lanes
 - Review recent Research logs
-- If `{baseDir}/Social/Guidance/Local-File-References.md` exists:
+- If `<workspace>/Social/Guidance/Local-File-References.md` exists:
   - Read listed local references (files/directories) that exist.
   - Use them as optional context inputs for lane strategy decisions.
   - Record any missing/unreadable configured references in the run log.
@@ -126,7 +126,7 @@ After lane adjustments, verify that:
 
 - Active lanes have clear definitions the Writer can act on
 - Lane frequency targets are up to date
-- `{baseDir}/Social/Submolts/Primary.md` is current (for Writer submolt targeting)
+- `<workspace>/Social/Submolts/Primary.md` is current (for Writer submolt targeting)
 
 The Content Specialist does not generate posts — the Writer handles post drafting based on the lanes and guidance the Content Specialist maintains.
 
@@ -137,7 +137,7 @@ The Content Specialist does not generate posts — the Writer handles post draft
 New lane ideas may come from:
 
 * High-performing patterns in Research guidance
-* Recurring themes from configured local references in `{baseDir}/Social/Guidance/Local-File-References.md`
+* Recurring themes from configured local references in `<workspace>/Social/Guidance/Local-File-References.md`
 * Emerging projects/artifacts from local references
 * Strong creative concepts appearing repeatedly
 
@@ -167,7 +167,7 @@ It shapes the pipeline. The Writer fills it.
 
 Each run appends to:
 
-`{baseDir}/Social/Content/Logs/Content-YYYY-MM-DD.md`
+`<workspace>/Social/Content/Logs/Content-YYYY-MM-DD.md`
 
 Log format:
 
@@ -219,7 +219,7 @@ The Content Specialist owns submolt lifecycle transitions.
 
 ### Regular Tasks
 
-- Ensure the agent is subscribed to all submolts listed in `{baseDir}/Social/Submolts/Primary.md`.
+- Ensure the agent is subscribed to all submolts listed in `<workspace>/Social/Submolts/Primary.md`.
 - Mark checkboxes for subscribed submolts in Primary.md.
 
 ### Promotion (Candidates → Primary)
@@ -229,21 +229,21 @@ Rules:
 - May promote up to **2 submolts per day** from Candidates → Primary.
 - Must base decision on:
   - Researcher notes in Candidates.md
-  - Guidance alignment (`{baseDir}/Social/Guidance/README.md`)
-  - Lane relevance (`{baseDir}/Social/Content/Lanes/`)
+  - Guidance alignment (`<workspace>/Social/Guidance/README.md`)
+  - Lane relevance (`<workspace>/Social/Content/Lanes/`)
 
 Steps:
 
-1. Move the entry from `{baseDir}/Social/Submolts/Candidates.md`
-2. Add to `{baseDir}/Social/Submolts/Primary.md`
+1. Move the entry from `<workspace>/Social/Submolts/Candidates.md`
+2. Add to `<workspace>/Social/Submolts/Primary.md`
 3. Remove from Candidates.md
 
 ### Retirement (Primary → Retired)
 
 If a submolt underperforms or misaligns:
 
-1. Move from `{baseDir}/Social/Submolts/Primary.md`
-2. Append to `{baseDir}/Social/Submolts/Retired.md`
+1. Move from `<workspace>/Social/Submolts/Primary.md`
+2. Append to `<workspace>/Social/Submolts/Retired.md`
 
 Format in Retired.md:
 
