@@ -5,7 +5,58 @@ Guidelines for agents contributing to `openclaw-skill-social-ops`.
 This repository is intended to be maintained via disciplined, reviewable changes.
 Agents must follow the rules below.
 
+## About the repo
+
+This is an openclaw skill.
+
+It's primarily a set of prompts for agents!
+
+If you need to learn more about what a skill is, see: https://docs.openclaw.ai/tools/skills
+
+These skills assist in adding focused content in context to agents.
+
+It's often about referring agents to read specific files.
+
+Use Key Patterns for Skill Directory Structure
+
+Use {baseDir} for Skill-Specific Files
+When your skill needs to reference its own files (scripts, assets, etc.), use the {baseDir} placeholder in your SKILL.md instructions:
+
+Recommended Skill Folder Layout:
+
+```
+your-skill/
+├── SKILL.md               # Main instructions (use {baseDir} for paths)
+├── scripts/               # Executable code
+│   ├── setup.py
+│   └── run.sh
+├── references/            # Extended documentation (loaded as needed)
+│   └── advanced.md
+└── assets/                # Templates, config files, etc.
+    └── template.json
+```
+
+So when making prompts use things such as:
+
+```
+Open the file found in {baseDir}/Social/roles/
+```
+
+or
+
+```
+Look for recent files in {baseDir}/Social/Content
+```
+
 ---
+
+## 0. Update your clone!!!
+
+All pull requests should made off of the most recent main.
+
+When you begin: please stash or otherwise clear your work in your clone.
+
+Checkout main. And then, create a branch.
 
 ## 1. Branching Rules
 
