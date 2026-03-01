@@ -144,7 +144,7 @@ That belongs to Responder.
 
 ---
 
-## 7. Verification & Post-Move
+## 7. Post-Move
 
 After successful publish:
 
@@ -158,8 +158,6 @@ to:
 `{baseDir}/Social/Content/Done/`
 
 Preserve filename.
-
-3. Solve the moltbook verification puzzle to confirm successful posting.
 
 ---
 
