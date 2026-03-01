@@ -17,6 +17,8 @@ These skills assist in adding focused content in context to agents.
 
 It's often about referring agents to read specific files.
 
+We prefer agentic prompt instructions over scripting in the about header of the AGENTS.md
+
 Use Key Patterns for Skill Directory Structure
 
 Use {baseDir} for Skill-Specific Files
