@@ -37,12 +37,16 @@ The Content Specialist must review:
 1. `{baseDir}/Social/Guidance/README.md`
 2. `{baseDir}/Social/Content/Lanes/`
 3. `{baseDir}/Social/Submolts/Primary.md`
-4. `Projects/`
-5. `Creative/`
-6. `Reference/Reddit/`
-7. Recent Research logs
+4. Recent Research logs
 
 Before generating new posts.
+
+Optional local content references (human-configurable):
+
+- If present, read `{baseDir}/Social/Guidance/Local-File-References.md`.
+- Treat it as a curated list of local files/directories that may inform content generation.
+- Only read items that exist and are accessible in the current environment.
+- Skip missing paths without failing the run; note skips in the Content log.
 
 ---
 
@@ -103,10 +107,11 @@ On each run:
 
 - Read Guidance README
 - Scan active lanes
-- Scan Projects (respect private markers)
-- Scan Creative directory
-- Review Reddit reference corpus
 - Review recent Research logs
+- If `{baseDir}/Social/Guidance/Local-File-References.md` exists:
+  - Read listed local references (files/directories) that exist.
+  - Use them as optional context inputs for content generation.
+  - Record any missing/unreadable configured references in the run log.
 
 ### Step 2 — Adjust Lanes if Needed
 
@@ -189,9 +194,9 @@ Body:
 New lane ideas may come from:
 
 * High-performing patterns in Research guidance
-* Recurring Reddit themes from `Reference/Reddit/`
-* Emerging Projects
-* Strong Creative concepts appearing repeatedly
+* Recurring themes from configured local references in `{baseDir}/Social/Guidance/Local-File-References.md`
+* Emerging projects/artifacts from local references
+* Strong creative concepts appearing repeatedly
 
 A lane should only be created if:
 
