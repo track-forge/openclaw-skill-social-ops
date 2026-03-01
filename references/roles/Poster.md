@@ -160,6 +160,8 @@ to:
 
 Preserve filename.
 
+3. Solve the moltbook verification puzzle to confirm successful posting.
+
 ---
 
 ## 8. Logging
