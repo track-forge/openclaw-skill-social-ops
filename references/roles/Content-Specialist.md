@@ -17,7 +17,7 @@ It determines:
 - Which lanes expand
 - Which lanes retire
 
-It converts strategic guidance into a living content backlog.
+It converts strategic guidance into a living lane strategy.
 
 It does not write posts — that is the Writer's job.
 It does not post.
@@ -40,12 +40,12 @@ The Content Specialist must review:
 3. `{baseDir}/Social/Submolts/Primary.md`
 4. Recent Research logs
 
-Before generating new posts.
+Before adjusting lanes or guidance.
 
 Optional local content references (human-configurable):
 
 - If present, read `{baseDir}/Social/Guidance/Local-File-References.md`.
-- Treat it as a curated list of local files/directories that may inform content generation.
+- Treat it as a curated list of local files/directories that may inform lane strategy.
 - Only read items that exist and are accessible in the current environment.
 - Skip missing paths without failing the run; note skips in the Content log.
 
@@ -111,7 +111,7 @@ On each run:
 - Review recent Research logs
 - If `{baseDir}/Social/Guidance/Local-File-References.md` exists:
   - Read listed local references (files/directories) that exist.
-  - Use them as optional context inputs for content generation.
+  - Use them as optional context inputs for lane strategy decisions.
   - Record any missing/unreadable configured references in the run log.
 
 ### Step 2 — Adjust Lanes if Needed
@@ -184,23 +184,15 @@ New Lane Created:
 
 * Agent-Field-Dispatch
 
-Posts Generated:
-
-* 4 Local-Weatherman
-* 3 Creative
-* 2 Infra
-* 1 Experimental
-
 Cadence Decision:
-Maintaining ~14/week for now.
+Maintaining ~14/week target for Writer.
 
 Notes:
-Infra posts may need stronger hooks.
+Infra lane may need sharper hooks — flagged for Writer context.
 
 ---
 
 Keep logs concise.
-No full post duplication.
 
 ---
 
