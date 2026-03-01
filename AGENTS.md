@@ -11,6 +11,8 @@ This is an openclaw skill.
 
 It's primarily a set of prompts for agents!
 
+We prefer creating PROMPTS for an agent to use over creating shell scripts, or utilities.
+
 If you need to learn more about what a skill is, see: https://docs.openclaw.ai/tools/skills
 
 These skills assist in adding focused content in context to agents.
