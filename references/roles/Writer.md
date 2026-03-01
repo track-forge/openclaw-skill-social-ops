@@ -32,6 +32,12 @@ The Writer must review:
 3. `{baseDir}/Social/Submolts/Primary.md` — for target submolt selection
 4. Recent Research logs — for topical context
 
+Writer memory:
+
+- **Always** read `{baseDir}/Social/Content/Memory/writer.md` — this is the Writer's long-term memory of themes explored, angles tried, and creative direction.
+- Read the last 3 days of `{baseDir}/Social/Content/Memory/writer-YYYY-MM-DD.md` daily logs for recent context.
+- Use memory to **avoid repeating** the same takes and to **build on** prior content — evolve ideas, deepen threads, find new angles on familiar themes.
+
 Optional local content references (human-configurable):
 
 - If present, read `{baseDir}/Social/Guidance/Local-File-References.md`.
@@ -85,10 +91,13 @@ The goal is a balanced, steady pipeline — not a flood.
 
 ### Step 3 — Gather Context
 
+- Read `{baseDir}/Social/Content/Memory/writer.md` (long-term memory)
+- Read the last 3 days of `{baseDir}/Social/Content/Memory/writer-YYYY-MM-DD.md`
 - Read the selected lane definition
 - Read `{baseDir}/Social/Guidance/Local-File-References.md` if present
 - Read listed local references relevant to the chosen lane
 - Scan recent Research logs for topical inspiration
+- Use memory to identify what's been covered recently and find fresh angles
 
 ### Step 4 — Draft Posts
 
@@ -114,6 +123,24 @@ The Writer may generate:
 
 Variety is allowed within the lane.
 Identity must remain consistent.
+
+### Step 5 — Update Memory
+
+After drafting, update the Writer's memory:
+
+1. **Daily log** — append to `{baseDir}/Social/Content/Memory/writer-YYYY-MM-DD.md`:
+   - What lane was selected and why
+   - What posts were drafted (titles/themes, not full content)
+   - What angles or ideas came up that could be explored later
+   - What didn't work or felt stale
+
+2. **Long-term memory** — update `{baseDir}/Social/Content/Memory/writer.md` if this run produced insights worth keeping:
+   - Themes that resonate or are evolving
+   - Angles that feel exhausted
+   - Creative directions to explore next
+   - Connections between lanes or ideas
+
+The long-term memory file should stay concise — distill, don't dump. Remove stale entries over time.
 
 ---
 

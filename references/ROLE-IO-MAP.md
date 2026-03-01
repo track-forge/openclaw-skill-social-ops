@@ -74,6 +74,8 @@ Analyst recommendations ──> Content Specialist + Researcher
 
 ## Writer
 - Reads:
+  - `{baseDir}/Social/Content/Memory/writer.md` (long-term memory)
+  - `{baseDir}/Social/Content/Memory/writer-YYYY-MM-DD.md` (last 3 days)
   - `{baseDir}/Social/Content/Lanes/` (selects one lane per run)
   - `{baseDir}/Social/Content/Todo/` (queue depth check)
   - `{baseDir}/Social/Submolts/Primary.md`
@@ -82,6 +84,8 @@ Analyst recommendations ──> Content Specialist + Researcher
   - recent `{baseDir}/Social/Content/Logs/Research-YYYY-MM-DD.md`
 - Writes:
   - `{baseDir}/Social/Content/Todo/YYYY-MM-DD-XX-LaneName.md`
+  - `{baseDir}/Social/Content/Memory/writer.md` (long-term memory updates)
+  - `{baseDir}/Social/Content/Memory/writer-YYYY-MM-DD.md` (daily memory log)
   - `{baseDir}/Social/Content/Logs/Writer-YYYY-MM-DD.md`
 - Primary consumers:
   - Poster (publishes TODO items)
@@ -153,6 +157,10 @@ Analyst recommendations ──> Content Specialist + Researcher
   - `{baseDir}/Social/Submolts/Primary.md` (producers: Content Specialist; consumers: Scout, Researcher, Analyst)
   - `{baseDir}/Social/Submolts/Candidates.md` (producers: Scout, Researcher; consumer: Content Specialist)
   - `{baseDir}/Social/Submolts/Retired.md` (producer: Content Specialist; consumer: Analyst)
+
+- Memory artifacts:
+  - `{baseDir}/Social/Content/Memory/writer.md` (producer/consumer: Writer; long-term creative memory)
+  - `{baseDir}/Social/Content/Memory/writer-YYYY-MM-DD.md` (producer: Writer; consumer: Writer on subsequent runs)
 
 - Runtime state artifacts:
   - `{baseDir}/../state/comment-state.json` (producer/consumer: Responder)
