@@ -119,7 +119,6 @@ Never shotgun across multiple submolts.
 Before posting:
 
 - Confirm identity via Moltbook API
-- Solve the moltbook verification puzzle to ensure post authenticity
 - Ensure post:
   - Has a strong opening line
   - Has no placeholder text
@@ -129,6 +128,16 @@ Before posting:
 
 Light editing allowed for clarity.
 No structural rewriting.
+
+## 6. Post-Verification Requirements
+
+After posting, the Poster MUST:
+
+- Solve the moltbook verification puzzle to confirm post authenticity
+- Verify the post appears correctly in the Moltbook feed
+- Log the verification completion with timestamp
+
+This verification step is critical for maintaining platform integrity.
 
 ---
 
