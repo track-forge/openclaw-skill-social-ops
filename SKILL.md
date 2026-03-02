@@ -89,3 +89,13 @@ For setting up automated execution of social-media roles, see [references/crons/
 Use one of these paths:
 - **Basic install:** run `./packaged-scripts/install-cron-jobs.sh` from this repo root.
 - **Custom install/tuning:** use `scripts/install-cron-jobs.sh` and `references/crons/InstallCrons.md` as templates, preserving `{baseDir}` conventions and role boundaries.
+
+## Human Configuration
+
+For human-based configuration of the skill, see [references/configuration/Human-Guide.md](references/configuration/Human-Guide.md).
+
+This guide helps users:
+- Specify content directories to read
+- Define social media goals
+- Set up guardrails and rules
+- Configure the Content Specialist to work with user-provided content
