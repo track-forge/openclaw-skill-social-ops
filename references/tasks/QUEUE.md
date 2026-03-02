@@ -41,4 +41,4 @@ Owner: Builder
 Result: Created bash script implementing Poster role logic including FIFO selection, submolt determination, file management, and logging.
 Changed files:
 - `scripts/poster.sh` (new)
-- `references/tasks/SOT-007.md` (new)
+Notes: Task reference file (SOT-007.md) has been removed as per issue #53 - using GitHub issues as source of truth

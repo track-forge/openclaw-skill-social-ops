@@ -86,5 +86,5 @@ scripts/              Optional helper scripts and adapters
 For setting up automated execution of social-media roles, see [references/crons/InstallCrons.md](references/crons/InstallCrons.md).
 
 Use one of these paths:
-- **Basic install:** run `./scripts/install-cron-jobs.sh` from this repo root.
+- **Basic install:** run `./packaged-scripts/install-cron-jobs.sh` from this repo root.
 - **Custom install/tuning:** use `scripts/install-cron-jobs.sh` and `references/crons/InstallCrons.md` as templates, preserving `{baseDir}` conventions and role boundaries.
