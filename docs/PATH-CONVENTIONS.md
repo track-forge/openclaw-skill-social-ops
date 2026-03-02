@@ -25,10 +25,10 @@ Examples:
 Use these locations for role runtime artifacts generated during operation:
 
 - Social runtime data lives in the workspace (outside the installed skill directory):
-  - `<workspace>/Social/Guidance/**`
-  - `<workspace>/Social/Content/Todo/**`
-  - `<workspace>/Social/Content/Done/**`
-  - `<workspace>/Social/Content/Logs/**`
+  - `$SOCIAL_OPS_DATA_DIR/Guidance/**`
+  - `$SOCIAL_OPS_DATA_DIR/Content/Todo/**`
+  - `$SOCIAL_OPS_DATA_DIR/Content/Done/**`
+  - `$SOCIAL_OPS_DATA_DIR/Content/Logs/**`
 - Comment watermark state remains at:
   - `{baseDir}/../state/comment-state.json`
 
@@ -38,5 +38,5 @@ Use these locations for role runtime artifacts generated during operation:
 
 - Do not introduce absolute host paths.
 - For packaged skill references, prefer `{baseDir}`.
-- For generated Social runtime artifacts, keep paths under `<workspace>/Social/...`.
+- For generated Social runtime artifacts, keep paths under `$SOCIAL_OPS_DATA_DIR/...`.
 - For known state artifacts, use the documented state path until policy changes.
