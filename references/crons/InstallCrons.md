@@ -7,17 +7,17 @@ This guide defines the baseline social-media cron set and how to install it with
 Run the installer script from the repository root:
 
 ```bash
-./scripts/install-cron-jobs.sh
+./packaged-scripts/install-cron-jobs.sh
 ```
 
 Optional flags:
 
 ```bash
 # Preview commands only
-./scripts/install-cron-jobs.sh --dry-run
+./packaged-scripts/install-cron-jobs.sh --dry-run
 
 # Customize skill path + timezone
-./scripts/install-cron-jobs.sh \
+./packaged-scripts/install-cron-jobs.sh \
   --base-dir /path/to/openclaw-skill-social-ops \
   --tz America/New_York
 ```
