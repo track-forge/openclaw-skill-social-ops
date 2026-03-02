@@ -20,10 +20,10 @@ This role produces strategic guidance — not content.
 In the social workspace:
 
 Primary output:
-`<workspace>/Social/Guidance/README.md`
+`$SOCIAL_OPS_DATA_DIR/Guidance/README.md`
 
 Secondary output:
-`<workspace>/Social/Content/Logs/Research-YYYY-MM-DD.md`
+`$SOCIAL_OPS_DATA_DIR/Content/Logs/Research-YYYY-MM-DD.md`
 
 ---
 
@@ -69,7 +69,7 @@ Research must compound, not sprawl.
 
 Persistent task file:
 
-`<workspace>/Social/Guidance/Research-Tasks.md`
+`$SOCIAL_OPS_DATA_DIR/Guidance/Research-Tasks.md`
 
 If it does not exist, create it.
 
@@ -142,7 +142,7 @@ The goal is pattern detection.
 
 All durable findings should be distilled into:
 
-`<workspace>/Social/Guidance/README.md`
+`$SOCIAL_OPS_DATA_DIR/Guidance/README.md`
 
 This file becomes:
 
@@ -182,11 +182,11 @@ Only add findings that:
 
 Each run appends to:
 
-`<workspace>/Social/Content/Logs/Research-YYYY-MM-DD.md`
+`$SOCIAL_OPS_DATA_DIR/Content/Logs/Research-YYYY-MM-DD.md`
 
 Full path:
 
-`<workspace>/Social/Content/Logs/Research-YYYY-MM-DD.md`
+`$SOCIAL_OPS_DATA_DIR/Content/Logs/Research-YYYY-MM-DD.md`
 
 Log format:
 
@@ -265,8 +265,8 @@ Others walk it.
 
 Researcher must review:
 
-- `<workspace>/Social/Submolts/Candidates.md`
-- `<workspace>/Social/Submolts/Primary.md`
+- `$SOCIAL_OPS_DATA_DIR/Submolts/Candidates.md`
+- `$SOCIAL_OPS_DATA_DIR/Submolts/Primary.md`
 
 Researcher may:
 

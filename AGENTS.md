@@ -41,13 +41,13 @@ your-skill/
 So when making prompts use things such as:
 
 ```
-Open the file found in <workspace>/Social/roles/
+Open the file found in $SOCIAL_OPS_DATA_DIR/roles/
 ```
 
 or
 
 ```
-Look for recent files in <workspace>/Social/Content
+Look for recent files in $SOCIAL_OPS_DATA_DIR/Content
 ```
 
 ---
