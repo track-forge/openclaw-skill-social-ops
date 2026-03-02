@@ -20,10 +20,11 @@ stage in the pipeline.
 ## Workflow
 
 ```
-Scout ──→ Content Specialist  (new opportunities → drafts)
+Scout ──→ Content Specialist  (new opportunities → lane strategy)
 Scout ──→ Responder           (reply-worthy threads → responses)
-Researcher ──→ guidance for Content Specialist & Responder
-Content Specialist ──→ Poster (finished drafts → published)
+Researcher ──→ guidance for Content Specialist & Writer
+Content Specialist ──→ Writer (lanes → final posts)
+Writer ──→ Poster             (finished posts → published)
 Poster ──→ done logs          (published → archived)
 Analyst ──→ strategy adjustments (performance data → tuning)
 ```
@@ -38,7 +39,7 @@ When dispatched to a role, read its reference doc fully before acting.
 | **Researcher** | `{baseDir}/references/roles/Researcher.md` | Deep-dive into topics, trends, and competitor activity. Produce guidance that informs content and responses. |
 | **Content Specialist** | `{baseDir}/references/roles/Content-Specialist.md` | Convert intelligence and strategy into a content backlog. Define lanes, cadence, and messaging. Does not post. |
 | **Responder** | `{baseDir}/references/roles/Responder.md` | Craft replies to threads surfaced by Scout. Match voice, add value, stay on-brand. |
-| **Poster** | `{baseDir}/references/roles/Poster.md` | Publish finished drafts to the platform. Move completed items to done logs. No ideation, no rewriting. |
+| **Poster** | `{baseDir}/references/roles/Poster.md` | Publish finished posts to the platform. Move completed items to done logs. No ideation, no rewriting. |
 | **Analyst** | `{baseDir}/references/roles/Analyst.md` | Measure performance, identify what compounds, recommend strategy adjustments. Runs weekly minimum. |
 
 ## Dispatching a Role
