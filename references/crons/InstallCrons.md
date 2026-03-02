@@ -50,7 +50,7 @@ Use this prompt when you want to hand-craft your own schedule while preserving r
 > - Responder: meaningful replies only; 1–3 sentences; max one Scout insertion.
 > - Scout: opportunities only; max 3 opportunities/run; no engagement actions.
 > - Content Specialist: lane clarity + strategy only; does not write posts.
-> - Writer: one lane per run; check queue depth; draft 1–4 posts max; skip if queue full.
+> - Writer: one lane per run; check queue depth; write 1–4 final posts max; skip if queue full.
 > - Researcher: 1–3 research tasks + up to 0–2 follow-ups.
 > - Analyst: weekly pattern analysis only; avoid overfitting to single-post spikes.
 > 
