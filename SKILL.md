@@ -99,7 +99,10 @@ references/           Role and strategic references
 assets/               Imported strategy artifacts and static source material
   strategy/           North-star strategy documents
 scripts/              Optional helper scripts and adapters
+Guidance/             Human-defined configuration and goals
 ```
+
+For detailed setup instructions, see [Guidance/CONFIGURATION-GUIDE.md](Guidance/CONFIGURATION-GUIDE.md).
 
 ## Cron Job Creation Prompt
 
