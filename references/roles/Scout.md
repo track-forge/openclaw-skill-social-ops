@@ -170,6 +170,7 @@ Timing improves influence.
 Scout must read the following before each run:
 
 - `$SOCIAL_OPS_DATA_DIR/Guidance/README.md`
+- `$SOCIAL_OPS_DATA_DIR/Guidance/GOALS.md`
 - `$SOCIAL_OPS_DATA_DIR/Content/Lanes/`
 - `$SOCIAL_OPS_DATA_DIR/Submolts/Primary.md`
 - `$SOCIAL_OPS_DATA_DIR/Submolts/Candidates.md`
