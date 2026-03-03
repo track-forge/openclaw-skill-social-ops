@@ -25,6 +25,7 @@ Analyst recommendations ──> Content Specialist + Researcher
 - Reads:
   - Moltbook feed/submolts/accounts (platform data)
   - `$SOCIAL_OPS_DATA_DIR/Guidance/README.md`
+  - `$SOCIAL_OPS_DATA_DIR/Guidance/GOALS.md`
   - `$SOCIAL_OPS_DATA_DIR/Content/Lanes/`
   - `$SOCIAL_OPS_DATA_DIR/Submolts/Primary.md`
   - `$SOCIAL_OPS_DATA_DIR/Submolts/Candidates.md`
@@ -39,6 +40,7 @@ Analyst recommendations ──> Content Specialist + Researcher
 ## Researcher
 - Reads:
   - Moltbook high-performing posts/accounts
+  - `$SOCIAL_OPS_DATA_DIR/Guidance/GOALS.md` (human direction)
   - `$SOCIAL_OPS_DATA_DIR/Guidance/Research-Tasks.md` (task queue)
   - prior research logs
   - `$SOCIAL_OPS_DATA_DIR/Submolts/Candidates.md`
@@ -56,6 +58,7 @@ Analyst recommendations ──> Content Specialist + Researcher
 ## Content Specialist
 - Reads:
   - `$SOCIAL_OPS_DATA_DIR/Guidance/README.md`
+  - `$SOCIAL_OPS_DATA_DIR/Guidance/GOALS.md`
   - `$SOCIAL_OPS_DATA_DIR/Guidance/Local-File-References.md` (optional, human-curated)
   - `$SOCIAL_OPS_DATA_DIR/Content/Lanes/`
   - recent `$SOCIAL_OPS_DATA_DIR/Content/Logs/Research-YYYY-MM-DD.md`
@@ -74,6 +77,8 @@ Analyst recommendations ──> Content Specialist + Researcher
 
 ## Writer
 - Reads:
+  - `$SOCIAL_OPS_DATA_DIR/Guidance/README.md`
+  - `$SOCIAL_OPS_DATA_DIR/Guidance/GOALS.md`
   - `$SOCIAL_OPS_DATA_DIR/Content/Memory/writer.md` (long-term memory)
   - `$SOCIAL_OPS_DATA_DIR/Content/Memory/writer-YYYY-MM-DD.md` (last 3 days)
   - `$SOCIAL_OPS_DATA_DIR/Content/Lanes/` (selects one lane per run)
@@ -135,7 +140,8 @@ Analyst recommendations ──> Content Specialist + Researcher
 ## Shared artifact map
 
 - Guidance artifacts:
-  - `$SOCIAL_OPS_DATA_DIR/Guidance/README.md` (producer: Researcher; consumers: Content Specialist, Poster, Analyst)
+  - `$SOCIAL_OPS_DATA_DIR/Guidance/README.md` (producer: Researcher; consumers: Scout, Content Specialist, Writer, Poster, Analyst)
+  - `$SOCIAL_OPS_DATA_DIR/Guidance/GOALS.md` (producer: human operator; consumers: Scout, Researcher, Content Specialist, Writer)
   - `$SOCIAL_OPS_DATA_DIR/Guidance/Research-Tasks.md` (producer/consumer: Researcher)
   - `$SOCIAL_OPS_DATA_DIR/Guidance/Local-File-References.md` (producer: human operator and/or Researcher; consumers: Content Specialist, Writer)
 

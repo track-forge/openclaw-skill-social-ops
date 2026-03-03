@@ -32,10 +32,12 @@ Social workspace root:
 
 The Writer must review:
 
-1. `$SOCIAL_OPS_DATA_DIR/Content/Lanes/` — pick **one lane per run**
-2. `$SOCIAL_OPS_DATA_DIR/Content/Todo/` — check current queue depth
-3. `$SOCIAL_OPS_DATA_DIR/Submolts/Primary.md` — for target submolt selection
-4. Recent Research logs — for topical context
+1. `$SOCIAL_OPS_DATA_DIR/Guidance/README.md` — current strategic guidance
+2. `$SOCIAL_OPS_DATA_DIR/Guidance/GOALS.md` — human-defined goals for crew direction
+3. `$SOCIAL_OPS_DATA_DIR/Content/Lanes/` — pick **one lane per run**
+4. `$SOCIAL_OPS_DATA_DIR/Content/Todo/` — check current queue depth
+5. `$SOCIAL_OPS_DATA_DIR/Submolts/Primary.md` — for target submolt selection
+6. Recent Research logs — for topical context
 
 Writer memory:
 
@@ -99,6 +101,8 @@ The goal is a balanced, steady pipeline — not a flood.
 - Read `$SOCIAL_OPS_DATA_DIR/Content/Memory/writer.md` (long-term memory)
 - Read the last 3 days of `$SOCIAL_OPS_DATA_DIR/Content/Memory/writer-YYYY-MM-DD.md`
 - Read the selected lane definition
+- Read `$SOCIAL_OPS_DATA_DIR/Guidance/README.md`
+- Read `$SOCIAL_OPS_DATA_DIR/Guidance/GOALS.md`
 - Read `$SOCIAL_OPS_DATA_DIR/Guidance/Local-File-References.md` if present
 - Read listed local references relevant to the chosen lane
 - Scan recent Research logs for topical inspiration

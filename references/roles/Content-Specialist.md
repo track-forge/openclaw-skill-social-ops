@@ -38,9 +38,10 @@ Social workspace root:
 The Content Specialist must review:
 
 1. `$SOCIAL_OPS_DATA_DIR/Guidance/README.md`
-2. `$SOCIAL_OPS_DATA_DIR/Content/Lanes/`
-3. `$SOCIAL_OPS_DATA_DIR/Submolts/Primary.md`
-4. Recent Research logs
+2. `$SOCIAL_OPS_DATA_DIR/Guidance/GOALS.md`
+3. `$SOCIAL_OPS_DATA_DIR/Content/Lanes/`
+4. `$SOCIAL_OPS_DATA_DIR/Submolts/Primary.md`
+5. Recent Research logs
 
 Before adjusting lanes or guidance.
 

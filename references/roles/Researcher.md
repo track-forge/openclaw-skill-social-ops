@@ -22,6 +22,9 @@ In the social workspace:
 Primary output:
 `$SOCIAL_OPS_DATA_DIR/Guidance/README.md`
 
+Human-direction input (must read before each run):
+`$SOCIAL_OPS_DATA_DIR/Guidance/GOALS.md`
+
 Secondary output:
 `$SOCIAL_OPS_DATA_DIR/Content/Logs/Research-YYYY-MM-DD.md`
 
