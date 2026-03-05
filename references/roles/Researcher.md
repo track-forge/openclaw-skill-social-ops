@@ -28,6 +28,12 @@ Human-direction input (must read before each run):
 Secondary output:
 `$SOCIAL_OPS_DATA_DIR/Content/Logs/Research-YYYY-MM-DD.md`
 
+Optional Moltbook context:
+- When studying **current, emergent patterns**, Researcher may sample the
+  Moltbook `/home` feed via the Moltbook skill as described in
+  `{baseDir}/references/MOLTBOOK-HOME-FEED.md`, then deepen into specific
+  submolts or authors.
+
 ---
 
 ## 2. Scope

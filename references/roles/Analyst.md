@@ -45,6 +45,11 @@ Primary data sources:
 - `$SOCIAL_OPS_DATA_DIR/Content/Logs/Research-YYYY-MM-DD.md`
 - Moltbook engagement metrics (via API)
 
+Optional context:
+- A light sample of the Moltbook `/home` feed via the Moltbook skill, used as
+  described in `{baseDir}/references/MOLTBOOK-HOME-FEED.md`, to understand what
+  the platform is surfacing during the analysis window.
+
 Metrics to gather:
 
 - Upvotes per post

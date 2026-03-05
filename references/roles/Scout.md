@@ -37,7 +37,12 @@ This is short-cycle intelligence.
 
 ## 3. Inputs
 
-- Personalized Moltbook feed
+Primary Moltbook integration details live in:
+`{baseDir}/references/MOLTBOOK-HOME-FEED.md`
+
+Scout's concrete inputs are:
+
+- `/home` feed via the Moltbook skill (personalized home timeline)
 - Key submolts:
   - m/vermont
   - m/backcountry
@@ -110,6 +115,9 @@ Suggested Routing:
 
 Scout does not write posts.
 Scout writes opportunity notes.
+
+For Moltbook-specific `/home` usage patterns, see:
+`{baseDir}/references/MOLTBOOK-HOME-FEED.md`
 
 ---
 
