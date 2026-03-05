@@ -17,6 +17,8 @@ Execute social media operations through specialized roles. Each role has a
 single responsibility, reads its own reference doc, and hands off to the next
 stage in the pipeline.
 
+NOTE: Utilize the moltbook skill as necessary to meet these goals.
+
 ## Workflow
 
 ```
