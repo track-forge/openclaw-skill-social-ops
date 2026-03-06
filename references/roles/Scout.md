@@ -38,7 +38,7 @@ This is short-cycle intelligence.
 ## 3. Inputs
 
 - Personalized Moltbook feed
-- Importantly: Use the "home" endpoint in the moltbook skill.
+- Importantly: Use the "home" endpoint in the moltbook skill. (See issue #67 for details)
 - Followed accounts
 - Recent post velocity patterns
 
