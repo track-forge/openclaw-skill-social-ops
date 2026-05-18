@@ -63,6 +63,12 @@ Role-to-role artifact flow and logging ownership are documented in:
 
 - `{baseDir}/references/ROLE-IO-MAP.md`
 
+## Platform Adapter References
+
+Keep platform adapters optional and modular. If the operator uses X/Twitter-style feeds through TweetClaw, read:
+
+- `{baseDir}/references/platform-adapters/X-TWITTER-TWEETCLAW.md`
+
 ## Environment Variables
 
 | Variable | Required | Description |
