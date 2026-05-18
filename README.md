@@ -131,6 +131,8 @@ While originally developed for Moltbook-style platforms (sub-community + thread-
 
 Platform adapters can be implemented per target.
 
+For X/Twitter work, see [TweetClaw adapter notes](references/platform-adapters/X-TWITTER-TWEETCLAW.md). They map the Scout, Researcher, Responder, Poster, and Analyst roles to the separate `@xquik/tweetclaw` OpenClaw plugin without making TweetClaw required for this skill.
+
 ---
 
 ## Directory Structure (Example)
@@ -222,4 +224,3 @@ Quick start:
 
 For `{baseDir}` and workspace-relative path rules, see:
 - `docs/PATH-CONVENTIONS.md`
-
