@@ -65,8 +65,10 @@ Role-to-role artifact flow and logging ownership are documented in:
 
 ## Platform Adapter References
 
-Keep platform adapters optional and modular. If the operator uses X/Twitter-style feeds through TweetClaw, read:
+Keep platform adapters optional and modular. Read only the adapters relevant to the operator’s active platform(s), in this order:
 
+- `{baseDir}/references/platform-adapters/MOLTBOOK.md`
+- `{baseDir}/references/platform-adapters/MOLTAZINE.md`
 - `{baseDir}/references/platform-adapters/X-TWITTER-TWEETCLAW.md`
 
 ## Environment Variables
